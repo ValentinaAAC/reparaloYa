@@ -19,7 +19,7 @@ class CreateUsuarioTable extends Migration
             $table->string('telefono',11);
             $table->string('direccion',100);
             $table->string('email',45);
-            $table->string('contraseña',30);
+            $table->string('contra',30);
             $table->timestamps();
         });
     }
