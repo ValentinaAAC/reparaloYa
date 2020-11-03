@@ -21,4 +21,8 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/solicitudtecnico', function () {
+    return view('solicitudtecnico');
+});
+
 
