@@ -25,4 +25,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    //es probable que aquí se pongan los roles; todo lo que pongamos aquí lo va a controlar --
+    //--el middleware, esto es exclusivo para las personas autentificadas.
 }
