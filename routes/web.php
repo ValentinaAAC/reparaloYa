@@ -27,6 +27,6 @@ Route::get('/solicitudtecnico', function () {
 
 
 
-Auth::routes();
+Auth::routes(); //autentificación
 
 Route::get('/home', 'HomeController@index')->name('home');
