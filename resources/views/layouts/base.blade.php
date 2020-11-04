@@ -17,13 +17,13 @@
             <a class="nav-link h5 text-white" href="#">Quiénes somos</a>
           </li>
           <li class="nav-item ml-3">
-            <a class="nav-link h5 text-white" href="registrarvista.html">Registrarse</a>
+            <a class="nav-link h5 text-white" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
           </li>
           <li class="nav-item ml-3">
             <a class="nav-link h5 text-white" href="registrartrabajador.html">Únete a nuestro equipo</a>
           </li>
           <li class="nav-item ml-3">
-            <a class="nav-link h5 text-white" href="loginvista.html">Iniciar Sesión</a>
+            <a class="nav-link h5 text-white" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
           </li>
         </ul>
       </div>
