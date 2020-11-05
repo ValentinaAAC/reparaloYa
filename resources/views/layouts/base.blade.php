@@ -1,56 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title> ¡Repáralo Ya!</title>
-  </head>
-  <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-      <a class="navbar-brand text-white" href="#">
-        <img src="images/logo.png" width="60" height="60" class="d-inline-block align-top ml-4" alt="" loading="lazy"></a>
-      <a class="nav-link text-white" href="#"><h1>¡Repáralo Ya!</h1></a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-        <ul class="navbar-nav ml-md-auto">
-          <li class="nav-item">
-            <a class="nav-link h5 text-white" href="#">Quiénes somos</a>
-          </li>
-          <li class="nav-item ml-3">
-            <a class="nav-link h5 text-white" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
-          </li>
-          <li class="nav-item ml-3">
-            <a class="nav-link h5 text-white" href="registrartrabajador.html">Únete a nuestro equipo</a>
-          </li>
-          <li class="nav-item ml-3">
-            <a class="nav-link h5 text-white" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
-          </li>
-        </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <title>¡Repáralo Ya!</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<!--Barra navegadora-->
+<body>
+  <header id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>¡Repáralo Ya!</h1></a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="menu">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation"><a href="index.html" class="active">Home</a></li>
+                <li role="presentation"><a href="Servicios.html">Servicios</a></li>
+                <li role="presentation"><a href="Nosotros.html">Nosotros</a></li>
+              <li role="presentation"><a href="iniciarSeCli.html">Iniciar sesion</a></li>
+              <li role="presentation"><a href="registrartrabajador.html">Unete a nuestro equipo</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
+  </header>
    
     <!--Contenido -->
-    @yield('contenido') -> @section('contenido')
+   <!-- @yield('contenido') -> @section('contenido')-->
 
 
 
-
-    <footer class="bd-footer text-muted bg-info">
-      <div class="container-fluid p-3 p-md-5">
-        <h5 class="text-white font-weight-bold">Nuestro proyecto</h5>
-        <p class="text-white text-lighten-4">Somos un equipo de estudiantes universitarios que trabajamos en este proyecto como si fuera nuestro trabajo de tiempo completo. </p> 
-        <div class="text-center mt-6">
-          <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" width="40" height="40" class="d-inline-block align-top ml-4" alt="" loading="lazy"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="images/face.png" width="40" height="40" class="d-inline-block align-top ml-4" alt="" loading="lazy"></a>
-          <a href="https://twitter.com/explore" target="_blank"><img src="images/twitter.png" width="40" height="40" class="d-inline-block align-top ml-4" alt="" loading="lazy"></a>
-        </div>  
+<!--Footer oscuro -->
+    <div class="sub-footer">
+    <div class="container">
+      <div class="social-icon">
+        <div class="col-md-4">
+          <ul class="social-network">
+            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+     
+          </ul>
+        </div>
       </div>
-    </footer> 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+      <div class="col-md-4 col-md-offset-4">
+        <div class="copyright">
+          &copy; ¡Repáralo Ya!. Todos los derechos reservados.
+          <div class="credits">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+</body>
+
 </html>
