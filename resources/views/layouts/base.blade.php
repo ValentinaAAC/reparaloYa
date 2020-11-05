@@ -37,9 +37,9 @@
             <ul class="nav nav-tabs" role="tablist">
               <li role="presentation"><a href="index.html" class="active">Home</a></li>
                 <li role="presentation"><a href="Servicios.html">Servicios</a></li>
-                <li role="presentation"><a href="Nosotros.html">Nosotros</a></li>
-              <li role="presentation"><a href="iniciarSeCli.html">Iniciar sesion</a></li>
-              <li role="presentation"><a href="registrartrabajador.html">Unete a nuestro equipo</a></li>
+                <li role="presentation"><a href="{{ env('APP_URL', '').'/nosotros' }}">Nosotros</a></li>
+              <li role="presentation"><a href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a></li>
+              <li role="presentation"><a href="{{ route('register') }}">{{ __('Únete a nuestro equipo') }}</a></li>
             </ul>
           </div>
         </div>
@@ -48,7 +48,7 @@
   </header>
    
     <!--Contenido -->
-   <!-- @yield('contenido') -> @section('contenido')-->
+    @yield('contenido') -> @section('contenido')
 
 
 
