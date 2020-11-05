@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('index');
+        return view('home');
     }
 
     //es probable que aquí se pongan los roles; todo lo que pongamos aquí lo va a controlar --
