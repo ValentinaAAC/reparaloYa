@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('content')
+@section('contenido')
 
 <img src="images/uno.jpg" width="100%" alt="Unsplashed fondo img 1">
     <br></br>
