@@ -18,7 +18,7 @@
 <!--Barra navegadora-->
 <body>
   <header id="header">
-    <nav class="navbar navbar-default navbar-static-top" role="banner">
+    <nav class="navbar navbar-default navbar-static-top bg-primary" role="banner">
       <div class="container">
         <div class="navbar-header">
 
@@ -29,19 +29,19 @@
                         <span class="icon-bar"></span>
                     </button>
           <div class="navbar-brand">
-            <a href="index.html"><h1>¡Repáralo Ya!</h1></a>
+            <a href="{{ env('APP_URL', '').'/index' }}"><h1>¡Repáralo Ya!</h1></a>
           </div>
         </div>
         <div class="navbar-collapse collapse">
           <div class="menu">
             <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation"><a href="index.html" class="active">Home</a></li>
-                <li role="presentation"><a href="Servicios.html">Servicios</a></li>
+              <li role="presentation"><a href="{{ env('APP_URL', '').'/index' }}" class="">Home</a></li>
+                <li role="presentation"><a href="{{ env('APP_URL', '').'/servicios' }}">Servicios</a></li>
                 <li role="presentation"><a href="{{ env('APP_URL', '').'/nosotros' }}">Nosotros</a></li>
               <li role="presentation"><a href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a></li>
               <li role="presentation"><a href="{{ route('register') }}">{{ __('Únete a nuestro equipo') }}</a></li>
             </ul>
-          </div>
+          </div> 
         </div>
       </div>
     </nav>
@@ -61,7 +61,6 @@
             <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
             <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-     
           </ul>
         </div>
       </div>
