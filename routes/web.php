@@ -29,6 +29,10 @@ Route::get('/nosotros', function () {
     return view('nosotros');
 });
 
+Route::get('/servicios', function () {
+    return view('servicios');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes(); //autentificación
