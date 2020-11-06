@@ -4408,6 +4408,7 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: #65AAF0;
 }
 
 .nav-link {
@@ -4443,18 +4444,19 @@ input[type=button].btn-block {
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
+  background-color: #65AAF0;
 }
 
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
-  background-color: transparent;
+  background-color: #65AAF0;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #f8fafc;
+  background-color: #65AAF0;
   border-color: #dee2e6 #dee2e6 #f8fafc;
 }
 
@@ -4502,6 +4504,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  
 }
 
 .navbar .container,
@@ -4537,6 +4540,7 @@ input[type=button].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color:#65AAF0 ;
 }
 
 .navbar-nav .nav-link {
@@ -4553,6 +4557,7 @@ input[type=button].btn-block {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  
 }
 
 .navbar-collapse {
@@ -4583,6 +4588,7 @@ input[type=button].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
+  
 }
 
 @media (max-width: 575.98px) {
