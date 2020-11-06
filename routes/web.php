@@ -25,6 +25,9 @@ Route::get('/solicitudtecnico', function () {
     return view('solicitudtecnico');
 });
 
+Route::get('/solicitudtecnico/index', 'SolicitudController@index')->name('solicitudtecnico.index');
+Route::post('/solicitudtecnico/store', 'SolicitudController@store')->name('solicitudtecnico.store');
+
 Route::get('/nosotros', function () {
     return view('nosotros');
 });
@@ -35,6 +38,6 @@ Route::get('/servicios', function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes(); //autentificación
+
 
 

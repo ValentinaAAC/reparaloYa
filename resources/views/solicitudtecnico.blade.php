@@ -43,16 +43,19 @@
 
   <div class="content">
     <div class="abs-center">
-      <form action="#" class="border p-4">
+      <form action="{{ route ('solicitudtecnico.store') }}" method="post">
+      {{ csrf_field() }}
        <h1>Generar solicitud de tecnico</h1>
        <label>Complete los datos del siguiente formulario.</label>
-       <div class="form-group">
-        <label for="exampleFormControlInput1">Ingrese su direccion</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-      </div>
+        <div class="form-group">
+          <label for="solicitudtecnico">Ingrese su direccion</label>
+            <div class="col-sm-10"> 
+          <input type="text" class="col-sm-5 col-form-label" name="direccion" id="direccion" placeholder="Direccion">
+       </div>
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Seleccione area de servicio</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <label for="solicitudtecnico">Seleccione area de servicio</label>
+            <div class="col-sm-10">
+          <select type="form-control" class="col-sm-2 col-form-label" name="servicio" id="servicio" placeholder="Servicio">
           <option>Gasfiteria</option>
           <option>Electricidad</option>
           <option>Refrigeracion</option>
@@ -60,16 +63,17 @@
           <option>Linea Blanca</option>
         </select>
       </div>
-      <div class="form-group >
-        <label for="exampleFormControlTextarea1" >Describa el Problema</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+      <div class="form-group">
+          <label for="solicitudtecnico">Describa el problema</label>
+          <div class="col-sm-10">
+          <input type="text" class="col-sm-10 col-form-label" name="problema" id="problema" placeholder="Escriba aquí">
+       </div>
 
       <div class="form-group">
-        <label for="exampleFormControlFile1">Subir una Foto</label>
-        <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/*">
+        <label for="solicitudtenico">Subir una Foto</label>
+        <input type="file" class="form-control-file" id="image" accept="image/*">
       </div>
-      <button type="button" class="btn btn-success">Enviar solicitud</button>
+      <button type="submit" class="btn btn-success">Enviar solicitud</button>
     </form>
     
   </div>
