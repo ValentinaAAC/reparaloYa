@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Solicitud;
 
 class SolicitudController extends Controller
 {
@@ -18,7 +19,15 @@ class SolicitudController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
+        $solicitud = new Solicitud();
+        $solicitud->direccion = $request->direccion;
+        $solicitud->idServicios = $request->servicio;
+        $solicitud->problema = $request->problema;
+        $solicitud->idUsuario = 1;
+        $solicitud->save();
+        return view('solicitudtecnico');
+
     }
 
 
