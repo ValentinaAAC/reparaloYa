@@ -56,11 +56,11 @@
         <label for="solicitudtecnico">Seleccione area de servicio</label>
             <div class="col-sm-10">
           <select type="form-control" class="col-sm-2 col-form-label" name="servicio" id="servicio" placeholder="Servicio">
-          <option>Gasfiteria</option>
-          <option>Electricidad</option>
-          <option>Refrigeracion</option>
-          <option>Computacion</option>
-          <option>Linea Blanca</option>
+          <option value="1">Gasfiteria</option>
+          <option value="2">Electricidad</option>
+          <option value="3">Refrigeracion</option>
+          <option value="4">Computacion</option>
+          <option value="5">Linea Blanca</option>
         </select>
       </div>
       <div class="form-group">
