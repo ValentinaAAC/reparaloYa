@@ -24,7 +24,7 @@ class SolicitudController extends Controller
         $solicitud->direccion = $request->direccion;
         $solicitud->idServicios = $request->servicio;
         $solicitud->problema = $request->problema;
-        $solicitud->idUsuario = 1;
+        $solicitud->idUsuario = 2;
         $solicitud->save();
         return view('solicitudtecnico');
 
