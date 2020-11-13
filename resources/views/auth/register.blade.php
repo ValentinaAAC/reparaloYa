@@ -46,7 +46,7 @@
                             <label for="telephone" class="col-md-4 col-form-label text-md-right">{{ __('Teléfono') }}</label>
 
                             <div class="col-md-6">
-                                <input id="telephone" type="text" class="form-control @error('telephone') is-invalid @enderror" telephone="telephone" value="{{ old('telephone') }}" required autocomplete="telephone">
+                                <input id="telephone" type="text" class="form-control @error('telephone') is-invalid @enderror" name="telephone" value="{{ old('telephone') }}" required autocomplete="telephone">
 
                                 @error('telephone')
                                     <span class="invalid-feedback" role="alert">
@@ -60,7 +60,7 @@
                             <label for="profesion" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
 
                             <div class="col-md-6">
-                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" profesion="profesion" value="{{ old('profesion') }}" required autocomplete="profesion">
+                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" name="profesion" value="{{ old('profesion') }}" required autocomplete="profesion">
 
                                 @error('profesion')
                                     <span class="invalid-feedback" role="alert">
