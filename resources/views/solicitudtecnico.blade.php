@@ -47,6 +47,11 @@
       {{ csrf_field() }}
        <h1>Generar solicitud de tecnico</h1>
        <label>Complete los datos del siguiente formulario.</label>
+       <div class="form-group">
+          <label for="solicitudtecnico">Nombre y apellido</label>
+            <div class="col-sm-10"> 
+          <input type="text" class="col-sm-5 col-form-label" name="nombre" id="nombre" placeholder="Nombre y apellido">
+       </div>
         <div class="form-group">
           <label for="solicitudtecnico">Ingrese su direccion</label>
             <div class="col-sm-10"> 
@@ -68,11 +73,7 @@
           <div class="col-sm-10">
           <input type="text" class="col-sm-10 col-form-label" name="problema" id="problema" placeholder="Escriba aquí">
        </div>
-
-      <div class="form-group">
-        <label for="solicitudtenico">Subir una Foto</label>
-        <input type="file" class="form-control-file" id="image" accept="image/*">
-      </div>
+      <br></br>
       <button type="submit" class="btn btn-success">Enviar solicitud</button>
     </form>
     
