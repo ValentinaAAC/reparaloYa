@@ -17,6 +17,7 @@ class CreateSolicitudTable extends Migration
             $table->increments('idSolicitud');
             $table->string('nombre',100);
             $table->string('direccion',100);
+            $table->string('telefono',15);
             $table->integer('idServicios')->unsigned();
             $table->string('problema',500);
             $table->foreign('idServicios')->references('idServicios')->on('servicios');
