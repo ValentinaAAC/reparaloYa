@@ -36,6 +36,14 @@ Route::get('/servicios', function () {
     return view('servicios');
 });
 
+Route::get('/historial', function() {
+    return view('historial');
+});
+
+Route::get('/trabajospublicados', function() {
+    return view('trabajospublicados');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
