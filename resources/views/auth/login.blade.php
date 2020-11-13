@@ -2,6 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <body background="/images/electro.jpg">
 <div class="container">
     <br></br>
