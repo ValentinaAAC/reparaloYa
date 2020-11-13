@@ -15,13 +15,11 @@ class CreateSolicitudTable extends Migration
     {
         Schema::create('solicitud', function (Blueprint $table) {
             $table->increments('idSolicitud');
+            $table->string('nombre',100);
             $table->string('direccion',100);
             $table->integer('idServicios')->unsigned();
             $table->string('problema',500);
-            $table->string('imagen');
-            $table->integer('idUsuario')->unsigned();
             $table->foreign('idServicios')->references('idServicios')->on('servicios');
-            $table->foreign('idUsuario')->references('idUsuario')->on('usuario');
             $table->timestamps();
             
             
