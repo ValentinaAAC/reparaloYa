@@ -23,6 +23,7 @@ class SolicitudController extends Controller
         $solicitud = new Solicitud();
         $solicitud->nombre = $request->nombre;
         $solicitud->direccion = $request->direccion;
+        $solicitud->telefono = $request->telefono;
         $solicitud->idServicios = $request->servicio;
         $solicitud->problema = $request->problema;
         $solicitud->save();
