@@ -4,7 +4,7 @@
 <!--------------------------------------------------- Perfil------------------------------------------------------>
 
           <div class="container emp-profile">
-                <form method="post">
+                <form method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-4">
                         <div class="profile-img">
@@ -23,7 +23,7 @@
                                 </a>
                                     </h1>
                                     <h6>
-                                        Ingeniera en informatica 
+                                        {{ Auth::user()->profesion }}
                                     </h6>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -51,7 +51,7 @@
                                                 <label>Nombre</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Kshiti Ghelani</p>
+                                                <p>{{ Auth::user()->name }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -59,7 +59,7 @@
                                                 <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>kshitighelani@gmail.com</p>
+                                                <p>{{ Auth::user()->email }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -67,7 +67,7 @@
                                                 <label>Telefono</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>123 456 7890</p>
+                                                <p>{{ Auth::user()->telephone }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -75,7 +75,7 @@
                                                 <label>Profesion</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>Programador</p>
+                                                <p>{{ Auth::user()->profesion }}</p>
                                             </div>
                                         </div>
                             </div>
