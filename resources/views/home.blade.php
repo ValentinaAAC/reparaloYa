@@ -1,23 +1,94 @@
-@extends('layouts.app')
+@extends('layouts.baseperfiles')
+@section('contenido')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Contenido') }}</div>
+<!--------------------------------------------------- Perfil------------------------------------------------------>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+          <div class="container emp-profile">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-4">
+                        <div class="profile-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                            <div class="file btn btn-lg btn-primary">
+                                Cambiar foto
+                                <input type="file" name="file"/>
+                            </div>
                         </div>
-                    @endif
-
-                    {{ __('Bienvenidoooooooo!') }}
+                    </div>
+                    <div class="col-md-6">
+                        <div class="profile-head">
+                                    <h1>
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+                                    </h1>
+                                    <h6>
+                                        Ingeniera en informatica 
+                                    </h6>
+                                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Acerca de</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!-- boton editar perfil-->
+                <input type="submit"  class="profile-edit-btn" name="btnAddMore" value="Editar perfil"/>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-md-4">
+                       
+                    </div>
+                    <div class="col-md-8">
+                        <div class="tab-content profile-tab" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Nombre</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Kshiti Ghelani</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Email</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>kshitighelani@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Telefono</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>123 456 7890</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label>Profesion</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Programador</p>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>           
         </div>
-    </div>
-</div>
+
 @endsection
+
+
+
+
+
+                  
