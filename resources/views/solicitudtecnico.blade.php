@@ -1,88 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+	<title>¡Repáralo Ya!</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!--headre area start-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <a class="navbar-brand text-white" href="#">
-      <img src="images/logo.png" width="60" height="60" class="d-inline-block align-top ml-4" alt="" loading="lazy"></a>
-      <a class="nav-link text-white" href="#"><h1>¡Repáralo Ya!</h1></a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-        <ul class="navbar-nav ml-md-auto">
+<div class="wrapper">
+    <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-4.jpg">
+        <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
-        </ul>
-      </div>
-    </nav>
-    <!--headre area end-->
-    <!--sidebar comienza-->
-    <div class="sidebar">
-     <center>
-      <img src="Alex.png" class="profile_image" alt>
-      <h4>Alex</h4>
-    </center>
-    <a href="solicitudtecnico.html"><i class="fas fa-desktop"></i><span>Solicitar Tecnico</span></a>
-    <a href="chatcliente.html"><i class="fas fa-comments"></i><span>Chat Activo</span></a>
-    <a href="historialcliente.html"><i class="fas fa-table"></i><span>Historial de solicitudes</span></a>
-    <a href="perfilcliente.html"><i class="fas fa-users-cog"></i><span>Perfil</span></a>
-    <a href=""><i class="fas fa-sign-out-alt"></i><span>Cerrar Sesion</span></a>
+<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="" class="simple-text">
+                    !Repáralo Ya!
+                </a>
+            </div>
 
-  </div>
-  <!--sidebar termina-->
-  <!-- Page Content -->
+              <ul class="nav">
+                   
+                <ul class="nav">
+                <li>
+                    <a href="formulario.html">
+                        <i class="pe-7s-tools"></i>
+                        <p>Solicita un tecnico</p>
+                    </a>
+                </li>
+
+               <li class="">
+                    <a href="chat.html">
+                        <i class="pe-7s-chat"></i>
+                        <p>Chat</p>
+                    </a>
+                </li>
+                
+
+
+                <li>
+                    <a href="historial.html">
+                        <i class="pe-7s-note2"></i>
+                        <p>Historial</p>
+                    </a>
+                </li>
+
+
+                
+
+
+                 <li class="">
+                    <a href="especialista.html">
+                        <i class="pe-7s-user"></i>
+                        <p>Perfil</p>
+                    </a>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
 
 
 
-  <div class="content">
-    <div class="abs-center">
-      <form action="{{ route ('solicitudtecnico.store') }}" method="post">
+
+    <div class="main-panel">
+		<nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="">Formulario de solicitud</a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                   
+                 <ul class="nav navbar-nav navbar-right">
+                        
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <p>
+                                        Ayuda
+                                        <b class="caret"></b>
+                                    </p>
+
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Contactar con un ejecutivo</a></li>
+                                <li><a href="#">Reclamos</a></li>
+                                <li><a href="#">Sugerencias</a></li>
+                     
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <p>Cerrar sesión</p>
+                            </a>
+                        </li>
+                        <li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+
+
+
+                </div>
+
+
+     <br> </br>
+
+<form action="{{ route ('solicitudtecnico.store') }}" method="post">
       {{ csrf_field() }}
-       <h1>Generar solicitud de tecnico</h1>
-       <label>Complete los datos del siguiente formulario.</label>
-        <div class="form-group">
-          <label for="solicitudtecnico">Ingrese su direccion</label>
-            <div class="col-sm-10"> 
-          <input type="text" class="col-sm-5 col-form-label" name="direccion" id="direccion" placeholder="Direccion">
-       </div>
-      <div class="form-group">
-        <label for="solicitudtecnico">Seleccione area de servicio</label>
-            <div class="col-sm-10">
-          <select type="form-control" class="col-sm-2 col-form-label" name="servicio" id="servicio" placeholder="Servicio">
-          <option value="1">Gasfiteria</option>
-          <option value="2">Electricidad</option>
-          <option value="3">Refrigeracion</option>
-          <option value="4">Computacion</option>
-          <option value="5">Linea Blanca</option>
-        </select>
-      </div>
-      <div class="form-group">
-          <label for="solicitudtecnico">Describa el problema</label>
-          <div class="col-sm-10">
-          <input type="text" class="col-sm-10 col-form-label" name="problema" id="problema" placeholder="Escriba aquí">
-       </div>
-
-      <div class="form-group">
-        <label for="solicitudtenico">Subir una Foto</label>
-        <input type="file" class="form-control-file" id="image" accept="image/*">
-      </div>
-      <button type="submit" class="btn btn-success">Enviar solicitud</button>
-    </form>
-    
+  <div class="form-group">
+    <label for="solicitudtecnico">Nombre y apellido</label>
+    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y apellido">
   </div>
+
+
+  <div class="form-group">
+    <label for="solicitudtecnico">Direccion</label>
+    <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Villa, calle casa">
+  </div>
+
+  <div class="form-group">
+    <label for="solicitudtecnico">telefono</label>
+    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="+569********">
+  </div>
+
+
+        
+
+
+  <div class="form-group">
+    <label for="solicitudtecnico">Seleccione una categoria</label>
+    <select class="form-control" name="servicio" id="servicio" placeholder="Servicio">
+      <option>Seleccione una categoria</option>
+      <option value="1">Computacion</option>
+      <option>Acces Point</option>
+      <option>Impresoras y Scanner</option>
+      <option>Gasfiteria</option>
+      <option>Servicio de electricidad</option>
+      <option>Linea blanca</option>
+      <option>Electro</option>
+      <option>Climatizacion</option>
+    </select>
+  </div>
+ 
+  <div class="form-group">
+    <label  for="solicitudtecnico">Describa su problema</label>
+    <textarea placeholder="Producto, modelo, marca y descripcion de la falla" class="form-control" name="problema" id="problema" rows="3"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-success">Enviar solicitud</button>
+ </form>
+
+            </div>
+ 
+
+        </nav>
+
+
+    </div>
 </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+
 </body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+
+	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+	<script src="assets/js/demo.js"></script>
+
+
 </html>

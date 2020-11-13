@@ -21,10 +21,11 @@ class SolicitudController extends Controller
     {
         //dd($request->all());
         $solicitud = new Solicitud();
+        $solicitud->nombre = $request->nombre;
         $solicitud->direccion = $request->direccion;
+        $solicitud->telefono = $request->telefono;
         $solicitud->idServicios = $request->servicio;
         $solicitud->problema = $request->problema;
-        $solicitud->idUsuario = 2;
         $solicitud->save();
         return view('solicitudtecnico');
 
