@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Solicitud extends Model
 {
     protected $table = 'Solicitud';
-    protected $fillable = ['direccion','idServicio','problema'];
+    protected $fillable = ['nombre','direccion','telefono','idServicio','problema'];
 }
