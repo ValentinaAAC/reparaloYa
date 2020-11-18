@@ -1,18 +1,25 @@
-@extends('layouts.baseperfiles')
+@extends('layouts.basetrabajador')
 @section('contenido')
 
 <!--------------------------------------------------- Perfil------------------------------------------------------>
-
           <div class="container emp-profile">
                 <form method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt=""/>
+                            <img src="/img/perfil.jpg" alt=""/>
                             <div class="file btn btn-lg btn-primary">
                                 Cambiar foto
                                 <input type="file" name="file"/>
                             </div>
+                            <!--
+                                    <input id="imagenperfil" accept="images/*" type="file" name="imagenperfil" valeu="">
+                                    @if($request->file('imagenperfil')){
+                                    $imagenperfil=$request->file('imagenperfil');
+                                    $imagenperfil->move('perfiles',$imagenperfil->getClientOriginalName());
+                                    $perfiles->imagenperfil=$imagenperfil->getClientOriginalName();
+                                }
+                                @endif-->
                         </div>
                     </div>
                     <div class="col-md-6">
