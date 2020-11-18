@@ -1,4 +1,4 @@
-@extends('layouts.baseperfiles')
+@extends('layouts.basetrabajador')
 @section('contenido')
 
 
