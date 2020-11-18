@@ -40,8 +40,24 @@ Route::get('/historial', function() {
     return view('historial');
 });
 
+Route::get('/chatusuario', function() {
+    return view('chatusuario');
+});
+
+Route::get('/historialusuario', function() {
+    return view('historialusuario');
+});
+
 Route::get('/trabajospublicados', function() {
     return view('trabajospublicados');
+});
+
+Route::get('/chatcolaborador', function() {
+    return view('chatcolaborador');
+});
+
+Route::get('/usuario', function() {
+    return view('usuario');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
