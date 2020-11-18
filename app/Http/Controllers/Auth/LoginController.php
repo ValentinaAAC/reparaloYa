@@ -37,4 +37,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    //Control de inicio de sesión por ID de usuario
+    public function redirectPath(){
+        if(auth()->user()->id==2){
+            return '/usuario';
+        }
+        return '/home';
+    }
 }
