@@ -20,9 +20,7 @@
                                     {{ Auth::user()->name }}
                                 </a>
                                     </h1>
-                                    <h6>
-                                        {{ Auth::user()->profesion }}
-                                    </h6>
+                                    
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
@@ -70,7 +68,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Profesion</label>
+                                                <label>Ciudad</label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p>{{ Auth::user()->profesion }}</p>
