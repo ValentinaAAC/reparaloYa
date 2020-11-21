@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registro') }}</div>
+                <div class="card-header">{{ __('Registro de colaborador') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -96,11 +96,42 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                         <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Registrar') }}
                                 </button>
+
                             </div>
+                        <!-- Button trigger modal 
+                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                        {{ __('Registrar') }}
+                        </button>-->
+
+                         <!-- Modal 
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Registro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ¡Te has registrado correctamente!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white"><a href="{{ env('APP_URL', '').'/index' }}">Volver a Inicio</a></button>
+                            </div>
+                            </div>
+                        </div>
+                        </div> -->
+
+
+
+
+
+
                         </div>
                     </form>
                 </div>
