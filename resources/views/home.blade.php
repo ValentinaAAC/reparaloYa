@@ -12,14 +12,7 @@
                                 Cambiar foto
                                 <input type="file" name="file"/>
                             </div>
-                            <!--
-                                    <input id="imagenperfil" accept="images/*" type="file" name="imagenperfil" valeu="">
-                                    @if($request->file('imagenperfil')){
-                                    $imagenperfil=$request->file('imagenperfil');
-                                    $imagenperfil->move('perfiles',$imagenperfil->getClientOriginalName());
-                                    $perfiles->imagenperfil=$imagenperfil->getClientOriginalName();
-                                }
-                                @endif-->
+                            
                         </div>
                     </div>
                     <div class="col-md-6">
