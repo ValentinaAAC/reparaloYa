@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+  <link rel="shortcut icon" href="images/logo.ico" />
   <title>¡Repáralo Ya!</title>
 
   <!-- Bootstrap -->
@@ -22,13 +22,8 @@
     <nav class="navbar navbar-default navbar-static-top bg-primary" role="banner">
       <div class="container">
         <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+        <a class="navbar-brand text-white" href="#">
+        <img src="images/logo.png" width="45" height="45" class="d-inline-block align-top ml-4" alt="" loading="lazy"></a>
           <div class="navbar-brand">
             <a href="{{ env('APP_URL', '').'/index' }}"><h1>¡Repáralo Ya!</h1></a>
           </div>
@@ -40,9 +35,9 @@
               <li role="presentation"><a href="{{ env('APP_URL', '').'/index' }}" class="">Home</a></li>
                 <li role="presentation"><a href="{{ env('APP_URL', '').'/servicios' }}">Servicios</a></li>
                 <li role="presentation"><a href="{{ env('APP_URL', '').'/nosotros' }}">Nosotros</a></li>
-              <li role="presentation"><a href="{{ env('APP_URL', '').'/login' }}">Iniciar sesión</a></li>
+              <li role="presentation"><a href="">Registrarse</a></li>
               @if (Route::has('register'))
-                <li role="presentation"><a href="{{ route('register') }}">{{ __('Registrarse') }}</a></li>
+                <li role="presentation"><a href="{{ env('APP_URL', '').'/registrocolaborador' }}">{{ __('Únete a nuestro equipo') }}</a></li>
               @endif
              @else
              <li class="nav-item dropdown">
@@ -63,6 +58,7 @@
                                 </div>
                             </li>
                         @endguest
+                  <li role="presentation"><a href="{{ env('APP_URL', '').'/login' }}">Iniciar sesión</a></li>
             </ul>
           </div> 
         </div>
