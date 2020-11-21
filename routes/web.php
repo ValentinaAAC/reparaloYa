@@ -28,6 +28,13 @@ Route::get('/solicitudtecnico', function () {
 Route::get('/solicitudtecnico/index', 'SolicitudController@index')->name('solicitudtecnico.index');
 Route::post('/solicitudtecnico/store', 'SolicitudController@store')->name('solicitudtecnico.store');
 
+Route::get('/registrocolaborador/index', 'RegistroColabController@index')->name('registrocolaborador.index');
+Route::post('/registrocolaborador/store', 'RegistroColabController@store')->name('registrocolaborador.store');
+
+Route::get('/registrocolaborador', function () {
+    return view('registrocolaborador');
+});
+
 Route::get('/nosotros', function () {
     return view('nosotros');
 });
@@ -56,11 +63,16 @@ Route::get('/chatcolaborador', function() {
     return view('chatcolaborador');
 });
 
+Route::get('/registeruser', function() {
+    return view('registeruser');
+});
+
 Route::get('/usuario', function() {
     return view('usuario');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 Auth::routes();
 
