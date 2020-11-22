@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\RegistroUsu;
 use Illuminate\Support\Facades\Hash;
 
+Use Session;
+Use Redirect;
+
 class RegistroUsuController extends Controller
 {
     public function _construct()
@@ -28,7 +31,8 @@ class RegistroUsuController extends Controller
         $users->profesion = $request->profesion;
         $users->image = $request->image;
         $users->save();
-        return redirect('/index');
+        Session::flash('message','¡Te has registrado con éxito!');
+        return Redirect::to('/index');
         
 
     }
