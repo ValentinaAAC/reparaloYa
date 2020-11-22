@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use App\RegistroColab;
 use Illuminate\Support\Facades\Hash;
 
+Use Session;
+Use Redirect;
+
+
 class RegistroColabController extends Controller
 {
     public function _construct()
@@ -28,7 +32,9 @@ class RegistroColabController extends Controller
         $users->profesion = $request->profesion;
         $users->image = $request->image;
         $users->save();
-        return redirect('/index');
+        //return redirect('/index')->with('success','¡Te has registrado con éxito!');
+        Session::flash('message','¡Te has registrado con éxito!');
+        return Redirect::to('/index');
         
 
     }
