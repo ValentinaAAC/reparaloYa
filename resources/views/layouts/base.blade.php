@@ -35,7 +35,7 @@
               <li role="presentation"><a href="{{ env('APP_URL', '').'/index' }}" class="">Home</a></li>
                 <li role="presentation"><a href="{{ env('APP_URL', '').'/servicios' }}">Servicios</a></li>
                 <li role="presentation"><a href="{{ env('APP_URL', '').'/nosotros' }}">Nosotros</a></li>
-              <li role="presentation"><a href="">Registrarse</a></li>
+              <li role="presentation"><a href="{{ env('APP_URL', '').'/registrousuario' }}">Registrarse</a></li>
               @if (Route::has('register'))
                 <li role="presentation"><a href="{{ env('APP_URL', '').'/registrocolaborador' }}">{{ __('Únete a nuestro equipo') }}</a></li>
               @endif
