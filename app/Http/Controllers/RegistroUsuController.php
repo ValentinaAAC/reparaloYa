@@ -1,0 +1,35 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\RegistroUsu;
+use Illuminate\Support\Facades\Hash;
+
+class RegistroUsuController extends Controller
+{
+    public function _construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        return view('registrousuario'); 
+    }
+
+    public function store(Request $request)
+    {
+        $users = new RegistroUsu();
+        $users->name = $request->name;
+        $users->email = $request->email;
+        $users->password = Hash::make($request->password);
+        $users->telephone = $request->telephone;
+        $users->profesion = $request->profesion;
+        $users->image = $request->image;
+        $users->save();
+        return redirect('/index');
+        
+
+    }
+}
