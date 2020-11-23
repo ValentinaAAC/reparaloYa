@@ -25,6 +25,7 @@ class RegistroColabController extends Controller
     public function store(Request $request)
     {
         $users = new RegistroColab();
+        $users->role = "colaborador";
         $users->name = $request->name;
         $users->email = $request->email;
         $users->password = Hash::make($request->password);
@@ -32,7 +33,7 @@ class RegistroColabController extends Controller
         $users->profesion = $request->profesion;
         $users->image = $request->image;
         $users->save();
-        //return redirect('/index')->with('success','¡Te has registrado con éxito!');
+
         Session::flash('message','¡Te has registrado con éxito!');
         return Redirect::to('/index');
         
