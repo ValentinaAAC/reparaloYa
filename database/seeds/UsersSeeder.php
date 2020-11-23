@@ -22,6 +22,8 @@ class UsersSeeder extends Seeder
             'profesion' => 'administrador',
             'image' => null,
 
+            
+
         ]);
     }
 }
