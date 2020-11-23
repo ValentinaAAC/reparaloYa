@@ -80,6 +80,12 @@ Route::get('/usuario', function() {
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/editarperfil', function() {
+    return view('editarperfil');
+});
+
+Route::get('editarperfil/actualizar',['as'=> 'editarperfil.edit', 'uses' => 'EditarPerfilController@edit']);
+Route::patch('editarperfil/actualizar',['as'=> 'editarperfil.update', 'uses' => 'EditarPerfilController@update']);
 
 Auth::routes();
 

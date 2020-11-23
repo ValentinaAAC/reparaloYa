@@ -7,6 +7,18 @@
 
 	<title>¡Repáralo Ya!</title>
 
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <style>
+    html, body{
+        font-family: 'PT Sans', sans-serif;
+        
+      }
+    </style>
+
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
@@ -29,6 +41,8 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css' />
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    @livewireStyles
+    @livewireScripts
 </head>
 <body>
 
