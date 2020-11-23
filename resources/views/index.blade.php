@@ -29,7 +29,7 @@
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
                 <form class="form-inline">
                   <div class="form-group">
-                    <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required" ><a href="{{ env('APP_URL', '').'/registeruser' }}">{{ __('Solicitar un especialista') }}</a></button>
+                    <button type="livedemo" name="purchase" class="btn btn-primary btn-lg" required="required" ><a href="{{ env('APP_URL', '').'/registrousuario' }}">{{ __('Solicitar un especialista') }}</a></button>
                   </div>
                   <div class="form-group">
            

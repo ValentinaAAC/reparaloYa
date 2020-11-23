@@ -66,14 +66,7 @@
                                                 <p>{{ Auth::user()->telephone }}</p>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Ciudad</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>{{ Auth::user()->profesion }}</p>
-                                            </div>
-                                        </div>
+                                        
                             </div>
                         </div>
                     </div>

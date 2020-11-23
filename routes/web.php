@@ -28,12 +28,19 @@ Route::get('/solicitudtecnico', function () {
 Route::get('/solicitudtecnico/index', 'SolicitudController@index')->name('solicitudtecnico.index');
 Route::post('/solicitudtecnico/store', 'SolicitudController@store')->name('solicitudtecnico.store');
 
-Route::get('/registrocolaborador/index', 'RegistroColabController@index')->name('registrocolaborador.index');
-Route::post('/registrocolaborador/store', 'RegistroColabController@store')->name('registrocolaborador.store');
-
 Route::get('/registrocolaborador', function () {
     return view('registrocolaborador');
 });
+
+Route::get('/registrocolaborador/index', 'RegistroColabController@index')->name('registrocolaborador.index');
+Route::post('/registrocolaborador/store', 'RegistroColabController@store')->name('registrocolaborador.store');
+
+Route::get('/registrousuario', function () {
+    return view('registrousuario');
+});
+
+Route::get('/registrousuario/index', 'RegistroUsuController@index')->name('registrousuario.index');
+Route::post('/registrousuario/store', 'RegistroUsuController@store')->name('registrousuario.store');
 
 Route::get('/nosotros', function () {
     return view('nosotros');
