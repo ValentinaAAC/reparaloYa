@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -89,4 +90,6 @@ Route::patch('editarperfil/actualizar',['as'=> 'editarperfil.update', 'uses' => 
 
 Auth::routes();
 
+Route::get('historialusuario', 'HistorialController@listado');
 
+Route::get('trabajospublicados', 'TrabajosController@listado');
