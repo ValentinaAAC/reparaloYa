@@ -41,7 +41,7 @@
           <img src="img/Gasfiteria.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Gasfiteria</h4>
-            <p>,Instalar, mantener y reparar las tuberías, Calefont, Fugas de Agua y Gas.etc.</p>
+            <p>Instalar, mantener y reparar las tuberías, Calefont, Fugas de Agua y Gas.etc.</p>
           </figcaption>
         </figure>
       </div>
@@ -50,7 +50,7 @@
           <img src="img/electricidad.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Servicio de electricidad</h4>
-            <p>instalación de enchufes, lámparas; instalaciones de tableros eléctricos. Fallas eléctricas y reparaciones Cortocircuitos, Sobrecargas, Recableado  etc. </p>
+            <p>Instalación de enchufes, lámparas; instalaciones de tableros eléctricos. Fallas eléctricas y reparaciones Cortocircuitos, Sobrecargas, Recableado  etc. </p>
           </figcaption>
         </figure>
       </div>
@@ -59,7 +59,7 @@
           <img src="img/lineablanca.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Linea blanca</h4>
-            <p>Reparacion y mantencion de lavadora, resfrigerador, microondas etc.</p>
+            <p>Reparación y mantención de lavadora, resfrigerador, microondas etc.</p>
           </figcaption>
         </figure>
       </div>
