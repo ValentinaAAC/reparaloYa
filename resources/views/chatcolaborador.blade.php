@@ -7,7 +7,7 @@
         <div class="col-md-6">
             @livewire("chat-form")
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             @livewire("chat-list")
         </div>
     </div>
