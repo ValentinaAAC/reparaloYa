@@ -3,7 +3,7 @@
 
 <div class="content">
 <div class="container-fluid">
-<table class="table">
+<table class="table" action="historial" method="get">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Nº </th>
@@ -23,8 +23,12 @@
           <td>{{ $solicitud->nombre }}</td>
           <td>{{ $solicitud->direccion }}</td>
           <td>{{ $solicitud->telefono }}</td>
-      <td><button type="button" class="btn btn-success">Aceptar</button></td>
-      <td><button type="button" class="btn btn-danger">Rechazar</button></td>
+          <td>
+            <input class="btn btn-success" type="submit" name="aceptar" value ="Aceptar">
+          </td>
+          <td>
+            <input class="btn btn-danger" type="reset" name="rechazar" value ="Rechazar">
+          </td>
     </tr>
   </tbody>
   @endforeach
