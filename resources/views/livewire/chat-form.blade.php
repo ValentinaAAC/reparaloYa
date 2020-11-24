@@ -12,10 +12,10 @@
             type="text" 
             wire:model="usuario" 
             class="form-control" 
-            id="usuario">                
-        
-      
-    </div>
+            id="usuario"
+            
+            >                
+     </div>
 
     <!-- Mensaje de Chat a Enviar -->
     <div class="form-group">
@@ -58,6 +58,7 @@
         </div>        
     </div>
     
+    
     <script>
                  
         // Esto lo recibimos en JS cuando lo emite el componente
@@ -69,6 +70,9 @@
             });
         });
         
+       
+        
     </script>
+    
 
 </div>
