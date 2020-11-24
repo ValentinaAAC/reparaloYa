@@ -93,3 +93,4 @@ Auth::routes();
 Route::get('historialusuario', 'HistorialController@listado');
 
 Route::get('trabajospublicados', 'TrabajosController@listado');
+
