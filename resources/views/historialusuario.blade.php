@@ -13,110 +13,27 @@
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
                                     <thead>
-                                        <th>ID</th>
-                                    	<th>Nombre especialista</th>
-                                    	<th>Total</th>
-                                    	<th>Ciudad</th>
-                                    	<th>Categoria</th>
+                                        <th>Nº</th>
+                                    	<th>Descripción del problema</th>
+                                    	<th>Categoría</th>
+                                    	<th>Dirección</th>
+                                    	<th>Teléfono</th>
                                     </thead>
+
+                                    @foreach($solicitud as $solicitud)
                                     <tbody>
+                                        
                                         <tr>
-                                        	<td>1</td>
-                                        	<td></td>
-                                        	<td></td>
-                                        	<td></td>
-                                        	<td></td>
-                                        </tr>
-                                       
-                                        <tr>
-                                            <td>2</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>3</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>5</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td>{{ $solicitud->idSolicitud }}</td>
+                                        	<td>{{ $solicitud->problema }}</td>
+                                        	<td>{{ $solicitud->idServicios }}</td>
+                                        	<td>{{ $solicitud->direccion }}</td>
+                                        	<td>{{ $solicitud->telefono }}</td>
                                         </tr>
 
                                     </tbody>
+                                    @endforeach
+                                    
                                     
                                 </table>
 
