@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+    
 	<title>¡Repáralo Ya!</title>
 
     <!-- Scripts -->
@@ -151,6 +151,12 @@
         </nav>
 
 <!--------------------------------------------------- Perfil------------------------------------------------------>
+    @if(Session::has('message'))
+        <div class="alert alert-success alert-dismissible text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{Session::get('message')}}
+        </div>
+    @endif
 
         @yield('contenido')
  
