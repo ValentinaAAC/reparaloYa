@@ -34,11 +34,10 @@ class ChatList extends Component
     {                
         if($this->usuario != "")
         {
-            // El contenido de la Push
-            //$data = \json_decode(\json_encode($data));
+        
             
             $mensajes = \App\Chat::orderBy("created_at", "desc")->take(5)->get();
-            //$this->mensajes = [];            
+                    
 
             foreach($mensajes as $mensaje)
             {
