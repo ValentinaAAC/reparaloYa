@@ -10,6 +10,7 @@ class ChatForm extends Component
     // Estas propiedades son publicas
     // y se pueden utilizar directamente desde la vista
     public $usuario;
+    
     public $mensaje;
     
     
@@ -30,24 +31,24 @@ class ChatForm extends Component
         
     }
     
-    // Cuando el otro componente nos solicitan el usuario    
+       
     public function solicitaUsuario()
     {
         // Lo emitimos por evento
         $this->emit('cambioUsuario', $this->usuario);
     }
 
-    // Cuando actualizamos el nombre de usuario
+   
     public function updatedUsuario()
     {
-        // Notificamos al otro componente el cambio
+       
         $this->emit('cambioUsuario', $this->usuario);
     }
 
-    // Se produce cuando se actualiza cualquier dato por Binding
+   
     public function updated($field)
     {
-        // Solo validamos el campo que genera el update
+        
         $validatedData = $this->validateOnly($field, [
             'usuario' => 'required',
             'mensaje' => 'required',
@@ -67,14 +68,11 @@ class ChatForm extends Component
             "mensaje" => $this->mensaje
         ]);
         
-        // Generamos el evento para Pusher
-        
-        // pero nos vale para comprobar en PusherDebug (y por consola) lo que llega...
+     
         
         event(new \App\Events\NuevoMensaje($this->usuario, $this->mensaje));
         
-        // Este evento es para que lo reciba el componente
-        // por Javascript y muestre el ALERT BOOSTRAP de "enviado"
+      
         $this->emit('enviadoOK', $this->mensaje);
         
     
