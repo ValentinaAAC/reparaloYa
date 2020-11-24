@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Solicitud;
 
+
 class TrabajosController extends Controller
 {
     public function listado()
@@ -12,4 +13,6 @@ class TrabajosController extends Controller
         $solicitud = Solicitud::all();
         return view('trabajospublicados')->with(compact('solicitud'));
     }
+
+    
 }
