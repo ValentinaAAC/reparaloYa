@@ -17,13 +17,42 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
 </head>
 <body>
+    <div id="myModal" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Información importante</h4>
+                </div>
+                <div class="modal-body">
+                    <p><strong>¡¡Como colaborador tendrás 7 días de prueba gratuita!!</strong></p>
+                    <p>Después de esta prueba, tendrás que realizar una suscripción por $30.000/mes.
+                    Este monto tendrá que ser ingresado mediante transferencia a los siguientes datos: </p>
+                    <p>
+                        - BancoEstado CuentaRUT</br>
+                        - RUT: XXXXXXXX-X </br>
+                        - Nombre: ReparaloYa </br>
+                        - Email: pagosreparaloya@gmail.com
+                    </P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div id="app">

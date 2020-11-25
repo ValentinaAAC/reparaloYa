@@ -42,19 +42,18 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     
-    @livewireStyles
-    @livewireScripts
 </head>
 <body>
 
 <div class="wrapper">
-     <div class="sidebar" data-color="red" data-image="assets/img/sidebar-4.jpg">
+    <div class="sidebar" data-color="black" data-image="assets/img/sidebar-4.jpg">
+        <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
-    <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
-
-   <div class="sidebar-wrapper">
+<!-- panel lateral-->
+<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="" class="simple-text">
+                    PANEL ADMINISTRADOR
                     !Repáralo Ya!
                 </a>
             </div>
@@ -62,70 +61,44 @@
               <ul class="nav">
                    
                 <ul class="nav">
-                   <li>
-                    <a href="{{ env('APP_URL', '').'/trabajospublicados' }}">
-                        <i class="pe-7s-bell"></i>
-                        <p>Trabajos a realizar</p>
+
+
+                
+
+                <li>
+                    <a href="{{ env('APP_URL', '').'/controlcolab' }}">
+                        <i class="pe-7s-tools"></i>
+                        <p>Control Colaboradores</p>
                     </a>
                 </li>
 
-
-               <li>
-                    <a href="{{ env('APP_URL', '').'/historial' }}">
-                        <i class="pe-7s-note2"></i>
-                        <p>Historial</p>
+                <li>
+                    <a href="{{ env('APP_URL', '').'/controlusu' }}">
+                        <i class="pe-7s-tools"></i>
+                        <p>Control Usuarios</p>
                     </a>
                 </li>
-
-                <li class="">
-                    <a href="{{ env('APP_URL', '').'/chatcolaborador' }}">
-                        <i class="pe-7s-chat"></i>
-                        <p>Chat</p>
-                    </a>
-                </li>
-
+                
                  <li class="">
-                    <a href="{{ env('APP_URL', '').'/home' }}">
-                        <i class="pe-7s-user"></i>
-                        <p>Perfil</p>
+                    <a href="{{ env('APP_URL', '').'/controlpago' }}">
+                        <i class="pe-7s-cash"></i>
+                        <p>Control de Pagos</p>
                     </a>
                 </li>
-               
+               </ul>
             </ul>
-    	</div>
+        </div>
     </div>
 
     <div class="main-panel">
 		<nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Colaborador</a>
+                    <a class="navbar-brand" href="#">Administrador</a>
                 </div>
                 <div class="collapse navbar-collapse">
                    
                     <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <p>
-									Ayuda
-									<b class="caret"></b>
-								</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Reclamos y sugerencias</a></li>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                            <label for="message-text" class="col-form-label">Escriba aqui su reclamo o sugerencia:</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Enviar</button>
-                                        </form>
-                                    </div>
-
-                            </ul>
-                        </li>   
                     <li class="nav-item dropdown">
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
@@ -152,14 +125,16 @@
                 </div>
             </div>
         </nav>
-<!--------------------------------------------------- Perfil------------------------------------------------------>
 
-        @yield('contenido') 
-                  
+<!-- panel lateral/-->
+
+
+@yield('contenido')
+
 </body>
 
-    <!--   Core JS Files   -->
-    <script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 	<!--  Charts Plugin -->
@@ -168,12 +143,14 @@
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
 
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
 
 
 </html>

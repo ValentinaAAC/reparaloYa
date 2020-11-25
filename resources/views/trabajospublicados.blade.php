@@ -24,11 +24,14 @@
           <td>{{ $solicitud->direccion }}</td>
           <td>{{ $solicitud->telefono }}</td>
           <td>
+          <form name="delete" method="DELETE" action="delete">
+            {{ csrf_field() }}
             <input class="btn btn-success" type="submit" name="aceptar" value ="Aceptar">
           </td>
           <td>
-            <input class="btn btn-danger" type="reset" name="rechazar" value ="Rechazar">
-          </td>
+            <input type="hidden" name="idSolicitud" value="{{ $solicitud->idSolicitud }}">
+            <button class="btn btn-danger" type="submit">Rechazar</button>
+          </form>
     </tr>
   </tbody>
   @endforeach

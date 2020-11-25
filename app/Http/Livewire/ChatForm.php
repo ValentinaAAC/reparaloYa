@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Livewire;
 
 use Livewire\Component;
@@ -84,3 +83,6 @@ class ChatForm extends Component
         return view('livewire.chat-form');
     }
 }
+
+
+

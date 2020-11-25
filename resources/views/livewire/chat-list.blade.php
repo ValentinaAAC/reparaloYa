@@ -1,5 +1,4 @@
 <div class="">
-
     <h3><strong>Últimos 5 mensajes</strong></h3>    
 
     <div class="card">        

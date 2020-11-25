@@ -37,4 +37,10 @@ class RegistroUsuController extends Controller
         
 
     }
+
+    public function listado()
+    {
+        $users = RegistroUsu::all();
+        return view('controlusu')->with(compact('users'));
+    }
 }
