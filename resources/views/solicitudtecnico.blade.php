@@ -26,13 +26,13 @@
     <select class="form-control" name="servicio" id="servicio" placeholder="Servicio">
       <option>Seleccione una categoria</option>
       <option value="1">Computacion</option>
-      <option>Acces Point</option>
-      <option>Impresoras y Scanner</option>
-      <option>Gasfiteria</option>
-      <option>Servicio de electricidad</option>
-      <option>Linea blanca</option>
-      <option>Electro</option>
-      <option>Climatizacion</option>
+      <option value="2">Acces Point</option>
+      <option value="3">Impresoras y Scanner</option>
+      <option value="4">Gasfiteria</option>
+      <option value="5">Servicio de electricidad</option>
+      <option value="6">Linea blanca</option>
+      <option value="7">Electro</option>
+      <option value="8">Climatizacion</option>
     </select>
   </div>
  

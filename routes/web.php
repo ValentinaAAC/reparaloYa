@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -92,4 +93,7 @@ Route::get('/editarperfil/update', 'EditarPerfilController@update')->name('edita
 
 Auth::routes();
 
+Route::get('historialusuario', 'HistorialController@listado');
+
+Route::get('trabajospublicados', 'TrabajosController@listado');
 

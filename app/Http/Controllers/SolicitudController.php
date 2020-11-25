@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Solicitud;
 
+Use Session;
+Use Redirect;
+
 class SolicitudController extends Controller
 {
     public function _construct()
@@ -27,7 +30,8 @@ class SolicitudController extends Controller
         $solicitud->idServicios = $request->servicio;
         $solicitud->problema = $request->problema;
         $solicitud->save();
-        return view('solicitudtecnico');
+        Session::flash('message','¡Tu solicitud se ha enviado con éxito!');
+        return Redirect::to('/solicitudtecnico');
 
     }
 

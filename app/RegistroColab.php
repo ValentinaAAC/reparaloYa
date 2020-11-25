@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class RegistroColab extends Model
 {
     protected $table = 'users';
-    protected $fillable = ['name','email','password','telephone','profesion','image'];
+    protected $fillable = ['role','name','email','password','telephone','profesion','image'];
 }

@@ -24,6 +24,7 @@ class RegistroUsuController extends Controller
     public function store(Request $request)
     {
         $users = new RegistroUsu();
+        $users->role = "usuario";
         $users->name = $request->name;
         $users->email = $request->email;
         $users->password = Hash::make($request->password);

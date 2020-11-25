@@ -38,12 +38,13 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    //Control de inicio de sesión por ID de usuario
-    
-    /*public function redirectPath(){
-        if(auth()->user()->id==2){
+    public function redirectTo()
+    {
+        if(\Auth::user()->role == 'usuario')
+        {
             return '/usuario';
+        } else {
+            return '/home';
         }
-        return '/home';
-    }*/
+    }
 }
