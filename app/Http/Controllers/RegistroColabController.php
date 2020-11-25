@@ -39,5 +39,18 @@ class RegistroColabController extends Controller
         
 
     }
+
+    public function listado()
+    {
+        $users = RegistroColab::all();
+        return view('controlcolab')->with(compact('users'));
+    }
+
+    public function destroy($id)
+    {
+        $users=RegistroColab::find($id);
+        $users->delete();
+        return view('controlcolab');
+    }
     
 }
