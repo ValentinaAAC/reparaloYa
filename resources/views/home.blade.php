@@ -37,7 +37,9 @@
                     </div>
                     <div class="col-md-2">
                         <!-- boton editar perfil-->
-                <input type="submit"  class="profile-edit-btn" name="btnAddMore" value="Editar perfil"/>
+                        <button type="button">
+                        <a href="{{ env('APP_URL', '').'/editarperfil' }}">Editar perfil </a>
+                        </button>
                     </div>
                 </div>
                 <div class="row">
