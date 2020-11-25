@@ -84,8 +84,11 @@ Route::get('/editarperfil', function() {
     return view('editarperfil');
 });
 
-Route::get('editarperfil/actualizar',['as'=> 'editarperfil.edit', 'uses' => 'EditarPerfilController@edit']);
-Route::patch('editarperfil/actualizar',['as'=> 'editarperfil.update', 'uses' => 'EditarPerfilController@update']);
+//Route::post('editarperfil/edit',['as'=> 'editarperfil.edit', 'uses' => 'EditarPerfilController@edit']);
+//Route::patch('editarperfil/update',['as'=> 'editarperfil.update', 'uses' => 'EditarPerfilController@update']);
+
+Route::get('/editarperfil/edit', 'EditarPerfilController@edit')->name('editarperfil.edit');
+Route::get('/editarperfil/update', 'EditarPerfilController@update')->name('editarperfil.update');
 
 Auth::routes();
 
