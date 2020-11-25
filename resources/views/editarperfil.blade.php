@@ -44,7 +44,7 @@
                         {{ csrf_field() }}
                     <div class="form-group">
                         <label for="editarperfil">Nombre y apellido</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre" value="{{ Auth::user()->name }}">
+                        <input type="text" class="form-control" name="name" id="nombre" value="{{ Auth::user()->name }}">
                     </div>
 
 
@@ -55,7 +55,7 @@
 
                     <div class="form-group">
                         <label for="editarperfil">telefono</label>
-                        <input type="text" class="form-control" name="telefono" id="telefono" value="{{ Auth::user()->telephone }}">
+                        <input type="text" class="form-control" name="telephone" id="telefono" value="{{ Auth::user()->telephone }}">
                     </div>
 
                     <div class="form-group">
