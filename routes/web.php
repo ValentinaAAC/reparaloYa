@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Solicitud;
+use App\RegistroColab;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,3 +95,24 @@ Route::get('historialusuario', 'HistorialController@listado');
 
 Route::get('trabajospublicados', 'TrabajosController@listado');
 
+Route::get('/admin', function() {
+    return view('admin');
+});
+
+
+Route::get('/controlusu', function() {
+    return view('controlusu');
+});
+
+Route::get('/controlpago', function() {
+    return view('controlpago');
+});
+
+Route::get('/controlcolab', function() {
+    return view('controlcolab');
+});
+
+Route::get('controlusu', 'RegistroUsuController@listado');
+Route::get('controlcolab', 'RegistroColabController@listado');
+
+Route::post('controlcolab/{id}', 'RegistroColabController@destroy')->name('controlcolab.destroy');
