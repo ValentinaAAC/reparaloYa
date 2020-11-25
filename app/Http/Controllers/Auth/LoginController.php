@@ -40,10 +40,12 @@ class LoginController extends Controller
 
     public function redirectTo()
     {
-        if(\Auth::user()->role == 'usuario')
+        if(\Auth::user()->role == 'administrador')
         {
+            return '/controlcolab';
+        } elseif(\Auth::user()->role == 'usuario') {
             return '/usuario';
-        } else {
+        }else{
             return '/home';
         }
     }
