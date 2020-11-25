@@ -3,20 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\RegistroColab;
+use App\Http\Controllers\Auth;
 
 class EditarPerfilController extends Controller
 {
-    public function edit(){
-        $users = User::find(Auth::User()->id);
-        if(empty($users)){
-           Flash::error('mensaje error');
-           return redirect()->back();
-        }
-        return view('editarperfil')->with('users', $users);
-     }
  
     public function update(Request $request){
-        $users = User::find(Auth::User()->id);
+        //$users = RegistroColab::find(Auth::User()->id);
+        $users = RegistroColab::where('id','=',$request->id)->firstOrFail();
         if(empty($users)){
            Flash::error('mensaje error');
            return redirect()->back();
