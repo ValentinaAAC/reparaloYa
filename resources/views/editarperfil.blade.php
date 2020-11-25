@@ -1,9 +1,10 @@
 @extends('layouts.basetrabajador')
 @section('contenido')
 
-<div class="container emp-profile">
-<form action="{{route('editarperfil.update')}}" method="PATCH">
-<div class="row">
+<!--------------------------------------------------- Perfil------------------------------------------------------>
+          <div class="container emp-profile">
+          <form action="{{route('editarperfil.update')}}" method="PATCH">                    
+                        <div class="row">
                         <div class="col-md-4">
                         <div class="profile-img">
                             <img src="/img/perfil.jpg" alt=""/>
@@ -18,9 +19,11 @@
                         <div class="profile-head">
                                     <h1>
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
                                 </a>
                                     </h1>
                                     <h6>
+                                        {{ Auth::user()->profesion }}
                                     </h6>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -33,7 +36,9 @@
                     </div>
                     <div class="col-md-2">
                         <!-- boton editar perfil-->
-                <input type="submit"  class="profile-edit-btn" name="btnAddMore" value="Editar perfil"/>
+                        <button type="button">
+                        <a href="{{ env('APP_URL', '').'/editarperfil' }}">Editar perfil </a>
+                        </button>
                     </div>
                 </div>
                 <div class="row">
@@ -48,6 +53,7 @@
                                                 <label>Nombre</label>
                                             </div>
                                             <div class="col-md-6">
+                                                <p>{{ Auth::user()->name }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -55,6 +61,7 @@
                                                 <label>Email</label>
                                             </div>
                                             <div class="col-md-6">
+                                                <p>{{ Auth::user()->email }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -62,6 +69,7 @@
                                                 <label>Telefono</label>
                                             </div>
                                             <div class="col-md-6">
+                                                <p>{{ Auth::user()->telephone }}</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -69,14 +77,15 @@
                                                 <label>Profesion</label>
                                             </div>
                                             <div class="col-md-6">
+                                                <p>{{ Auth::user()->profesion }}</p>
                                             </div>
                                         </div>
                             </div>
                         </div>
                     </div>
                 </div>
-</form>
-</div>
+            </form>           
+        </div>
 
 @endsection
 
