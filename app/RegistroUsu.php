@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class RegistroUsu extends Model
 {
     protected $table = 'users';
-    protected $fillable = ['role','name','email','password','telephone','profesion','image'];
+    protected $fillable = ['role','name','rut','email','password','telephone','profesion','image'];
 }
