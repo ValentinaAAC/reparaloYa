@@ -4,6 +4,7 @@
 
 <div class="content">
 <form action="{{ route ('solicitudtecnico.store') }}" method="post">
+
       {{ csrf_field() }}
   <div class="form-group">
     <label for="solicitudtecnico">Nombre y apellido</label>
