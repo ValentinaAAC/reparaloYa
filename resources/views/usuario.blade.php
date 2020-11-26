@@ -11,16 +11,12 @@
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
-                                    <h1>
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-                                    </h1>
+                                <h1><strong> {{ Auth::user()->name }}</strong></h1>
                                     
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Acerca de</a>
+                                    <h6><strong>Acerca de</strong></h6>
                                 </li>
                                
                             </ul>
@@ -28,7 +24,9 @@
                     </div>
                     <div class="col-md-2">
                         <!-- boton editar perfil-->
-                <input type="submit"  class="profile-edit-btn" name="btnAddMore" value="Editar perfil"/>
+                        <button type="button" class="btn btn-primary">
+                        <a href="{{ env('APP_URL', '').'/editarperfilusu' }}">Editar perfil </a>
+                        </button>
                     </div>
                 </div>
                 <div class="row">
