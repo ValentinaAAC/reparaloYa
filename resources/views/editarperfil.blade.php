@@ -2,8 +2,7 @@
 @section('contenido')
 
 <!--------------------------------------------------- Perfil------------------------------------------------------>
-          <div class="container emp-profile">
-          <form action="{{route('editarperfil.update')}}" method="PATCH">                    
+          <div class="container emp-profile">                  
                         <div class="row">
                         <div class="col-md-4">
                         <div class="profile-img">
@@ -39,9 +38,12 @@
                     <div class="col-md-4">
                        
                     <div class="content">
+                    
 
-                    <form action="{{ route ('editarperfil.update') }}" method="post">
+                    <form action="{{ route ( 'editarperfil.update' ) }}" method="POST">
+                        @method('PATCH')
                         {{ csrf_field() }}
+                        
                     <div class="form-group">
                         <label for="editarperfil">Nombre y apellido</label>
                         <input type="text" class="form-control" name="name" id="nombre" value="{{ Auth::user()->name }}">
@@ -55,7 +57,7 @@
 
                     <div class="form-group">
                         <label for="editarperfil">telefono</label>
-                        <input type="text" class="form-control" name="telephone" id="telefono" value="{{ Auth::user()->telephone }}">
+                        <input type="text" class="form-control" name="telephone" id="telephone" value="{{ Auth::user()->telephone }}">
                     </div>
 
                     <div class="form-group">
