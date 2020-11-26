@@ -6,11 +6,7 @@
                     <div class="row">
                         <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="/img/perfil.jpg" alt=""/>
-                            <div class="file btn btn-lg btn-primary">
-                                Cambiar foto
-                                <input type="file" name="file"/>
-                            </div>
+                            <img src="/img/perfilusuario.jpg" alt=""/>
                         </div>
                     </div>
                     <div class="col-md-6">
