@@ -43,7 +43,7 @@
             <img src="img/slide2.jpg" class="img-responsive" alt="">
             <div class="carousel-caption">
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
-                <h2>Especialistas certificados ¡Aprovecha tu primer mes gratuito!</h2>
+                <h2>Especialistas certificados ¡Aprovecha tu primera semana gratuita!</h2>
               </div>
             
               <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
