@@ -1,6 +1,12 @@
 @extends('layouts.basetrabajador')
 @section('contenido')
 
+<script>
+$(document).on('click', '.borrar', function (event) {
+    event.preventDefault();
+    $(this).closest('tr').remove();
+});
+</script>
 <div class="content">
 <div class="container-fluid">
 <table class="table" action="historial" method="get">
@@ -23,14 +29,11 @@
           <td>{{ $solicitud->direccion }}</td>
           <td>{{ $solicitud->telefono }}</td>
           <td>
-          <form name="delete" method="DELETE" action="delete">
-            {{ csrf_field() }}
-            <input class="btn btn-success" type="submit" name="aceptar" value ="Aceptar">
+            <input class="btn btn-success" type="submit" name="aceptar" value ="Aceptar" />
           </td>
           <td>
-            <input type="hidden" name="idSolicitud" value="{{ $solicitud->idSolicitud }}">
-            <button class="btn btn-danger" type="submit">Rechazar</button>
-          </form>
+            <input type="button" class="borrar btn btn-danger" value="Eliminar" />
+          </td>
     </tr>
   </tbody>
   @endforeach
