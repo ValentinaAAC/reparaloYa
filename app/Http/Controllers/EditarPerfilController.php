@@ -3,27 +3,36 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\RegistroColab;
+use App\editarperfil;
+use App\Http\Controllers\Auth;
+use App\User;
 
 class EditarPerfilController extends Controller
 {
-    public function edit(){
-        $users = User::find(Auth::User()->id);
-        if(empty($users)){
-           Flash::error('mensaje error');
-           return redirect()->back();
-        }
-        return view('editarperfil')->with('users', $users);
-     }
- 
-    public function update(Request $request){
-        $users = User::find(Auth::User()->id);
-        if(empty($users)){
-           Flash::error('mensaje error');
-           return redirect()->back();
-        }
-        $users->fill($request->all());
-        $users->save();
-        Flash::success('Perfil actualizado con éxito.');
-        return redirect(route('index'));
-     }
+
+
+      public function edit(User $users)
+    {
+       return view ('editarperfil.edit',[
+          'editarperfil'->$users
+
+       ]);
+    }
+
+
+    public function update(Request $request)
+   {  
+      $id = auth()->user()->id;
+      $users = User::findOrFail($id);
+      $users->update([
+         'name'=>$request['name'],
+         'email'=>$request['email'],
+         'telephone'=>$request['telephone'],
+         'profesion'=>$request['profesion'],
+      ]);
+
+      return redirect()->route('home', $users);
+
+   }
 }
