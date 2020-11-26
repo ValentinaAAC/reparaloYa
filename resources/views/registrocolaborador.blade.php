@@ -100,21 +100,6 @@
                                     {{ __('Registrar') }}
                                 </button>
                          </div> 
-
-                         
-                        
-                      
-                        
-                        
-
-                        
-                         
-
-
-
-
-
-
                         </div>
                     </form>
                 </div>
