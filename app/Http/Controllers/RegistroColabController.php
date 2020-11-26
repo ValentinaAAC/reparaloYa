@@ -27,6 +27,7 @@ class RegistroColabController extends Controller
         $users = new RegistroColab();
         $users->role = "colaborador";
         $users->name = $request->name;
+        $users->rut = $request->rut;
         $users->email = $request->email;
         $users->password = Hash::make($request->password);
         $users->telephone = $request->telephone;
