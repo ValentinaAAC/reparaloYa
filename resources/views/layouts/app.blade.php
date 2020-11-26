@@ -17,6 +17,13 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
     
 
     <!-- Styles -->
@@ -24,6 +31,28 @@
     
 </head>
 <body>
+<div id="myModal" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Información importante</h4>
+                </div>
+                <div class="modal-body">
+                    <p><strong>¡¡Esta aplicación solo será funcional en la localidad de CHILLÁN!!</strong></p>
+                    <p>Proximamente en más localidades...</p>
+                    <p>
+                        Para más información de nuestros servicios disponibles haz <a href="{{ env('APP_URL', '').'/servicios' }}">CLICK AQUÍ</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
     <div id="app">
