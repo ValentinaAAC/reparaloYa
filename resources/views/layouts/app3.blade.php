@@ -38,7 +38,7 @@
                     <h4 class="modal-title">Información importante</h4>
                 </div>
                 <div class="modal-body">
-                    <p><strong>¡¡Esta aplicación solo será funcional en la localidad de CHILLÁN!!</strong></p>
+                    <p><strong>¡¡Esta aplicación solo es funcional en la localidad de CHILLÁN!!</strong></p>
                     <p>Proximamente en más localidades...</p>
                     <p>
                         Para más información de nuestros servicios disponibles haz <a href="{{ env('APP_URL', '').'/servicios' }}">CLICK AQUÍ</a>
