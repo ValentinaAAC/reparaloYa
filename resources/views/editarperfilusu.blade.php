@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="editarperfilusu">telefono</label>
+                        <label for="editarperfilusu">Teléfono</label>
                         <input type="text" class="form-control" name="telephone" id="telephone" value="{{ Auth::user()->telephone }}">
                     </div>
                     </br>
