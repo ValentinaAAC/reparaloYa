@@ -15,6 +15,7 @@
                                 <table class="table table-hover table-striped">
                                     <thead>
                                         <th>ID</th>
+                                        <th>R.U.T.</th>
                                         <th>Nombre y apellido</th>
                                         <th>Teléfono</th>
                                         <th>Profesión o especialidad</th>
@@ -26,6 +27,7 @@
                                     <tbody>  
                                         <tr>
                                             <td>{{ $users->id }}</td>
+                                            <td>{{ $users->rut }}</td>
                                         	<td>{{ $users->name }}</td>
                                             <td>{{ $users->telephone }}</td>
                                             <td>{{ $users->profesion }}</td>
