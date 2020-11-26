@@ -4,6 +4,7 @@
 
 
         <!-- nadbar/-->
+        
         <a class="navbar-brand" href="#">Usuarios registrados</a>
         <div class="content">
             <div class="container-fluid">
@@ -31,8 +32,14 @@
                                         	<td>{{ $users->name }}</td>
                                             <td>{{ $users->email }}</td>
                                             <td>{{ $users->telephone }}</td>
-                                            <td><button type="button" class="btn btn-success">Activar</button></td>
-                                            <td><button type="button" class="btn btn-danger">Suspender</button></td>
+                                            <td>
+                                            <form method="post" action="{!! action('RegistroUsuController@destroy', $users->id) !!}" class="pull-left">
+                                            {!! csrf_field() !!}
+                                                <div>
+                                                    <button type="submit" onclick="return confirm('¿Desea eliminar el usuario?')" class="btn btn-danger">Eliminar</button>
+                                                </div>
+                                            </form>
+                                            </td>
                                         </tr>
                                     </tbody>
                                     @endif
