@@ -30,16 +30,16 @@
                                             <td>{{ $users->telephone }}</td>
                                             <td>{{ $users->profesion }}</td>
                                         	<td>{{ $users->email }}</td>
-                                            <td><button type="button" class="btn btn-success">Activar</button></td>
                                             <td><button type="button" class="btn btn-primary">Pago recibido</button></td>
-                                            <td> <button type="button" class="btn btn-warning">Pausar</button></td>
                                             <td>
-                                            <form method="POST" action="{{ url('controlcolab/{$users->id}') }}">
-                                            @csrf
-                                            @method('DELETE')
-                                            
-                                            <button type="submit"  class="btn btn-danger">Eliminar</button>
+                                            <form method="post" action="{!! action('RegistroColabController@destroy', $users->id) !!}" class="pull-left">
+                                            {!! csrf_field() !!}
+                                                <div>
+                                                    <button type="submit" onclick="return confirm('¿Desea eliminar el colaborador?')" class="btn btn-danger">Eliminar</button>
+                                                </div>
                                             </form>
+                                            
+                                            
                                             </td>
                                         </tr>
                                     </tbody>
