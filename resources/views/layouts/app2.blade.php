@@ -49,7 +49,7 @@
                     <p>
                         Para más información de nuestros servicios disponibles haz <a href="{{ env('APP_URL', '').'/servicios' }}">CLICK AQUÍ</a>
                     </p>
-                    <p><strong>¡¡¡Esta aplicación solo será funcional en la localidad de CHILLÁN!!!</strong></p>
+                    <p><strong>¡¡¡Esta aplicación solo es funcional en la localidad de CHILLÁN!!!</strong></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
