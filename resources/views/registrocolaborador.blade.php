@@ -1,7 +1,11 @@
 @extends('layouts.app2')
 
 @section('content')
+
+
+
 <body background="/images/electro.jpg">
+
 <br></br>
 <div class="container">
     <div class="row justify-content-center">
@@ -25,6 +29,22 @@
                                     </span>
                                 @enderror
                             </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="registrocolaborador" class="col-md-4 col-form-label text-md-right">{{ __('R.U.T.') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="rut" type="text" class="form-control @error('rut') is-invalid @enderror" name="rut" value="{{ old('rut') }}" required autocomplete="name" autofocus>
+
+                                @error('rut')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                
+                            </div>
+                            
+
                         </div>
 
                         <div class="form-group row">
