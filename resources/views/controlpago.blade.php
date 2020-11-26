@@ -28,7 +28,7 @@
                                           <td></td>
                                           <td></td>
                                           <td></td>
-                                          <td>Activo</td>
+                                          <td></td>
                                         </tr>
                                        
                                         <tr>
@@ -37,26 +37,11 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td>Pago pendiente</td>
+                                            <td></td>
                                         </tr>
 
 
-                                        <tr>
-                                            <td>3</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
+                           
 
                                         
 
