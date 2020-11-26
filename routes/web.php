@@ -119,3 +119,4 @@ Route::get('controlusu', 'RegistroUsuController@listado');
 Route::get('controlcolab', 'RegistroColabController@listado');
 
 Route::post('controlcolab/{id}', 'RegistroColabController@destroy')->name('controlcolab.destroy');
+Route::post('controlusu/{id}', 'RegistroUsuController@destroy')->name('controlusu.destroy');
