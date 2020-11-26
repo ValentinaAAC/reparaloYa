@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 
 Use Session;
 Use Redirect;
-
+Use DB;
 
 class RegistroColabController extends Controller
 {
@@ -42,15 +42,16 @@ class RegistroColabController extends Controller
 
     public function listado()
     {
+       
         $users = RegistroColab::all();
         return view('controlcolab')->with(compact('users'));
     }
 
     public function destroy($id)
     {
-        $users=RegistroColab::find($id);
+        $users=RegistroColab::findOrFail($id);
         $users->delete();
-        return view('controlcolab');
+        return Redirect::to('/controlcolab');
     }
     
 }
