@@ -19,7 +19,6 @@
     <tr>
       <td>{{ $solicitud->idSolicitud }}</td>
           <td>{{ $solicitud->problema }}</td>
-          <td>{{ $solicitud->idServicios }}</td>
           <td>{{ $solicitud->nombre }}</td>
           <td>{{ $solicitud->direccion }}</td>
           <td>{{ $solicitud->telefono }}</td>
