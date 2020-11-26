@@ -99,6 +99,7 @@ Route::get('historialusuario', 'HistorialController@listado');
 
 Route::get('trabajospublicados', 'TrabajosController@listado');
 
+
 Route::get('/admin', function() {
     return view('admin');
 });
