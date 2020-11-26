@@ -32,7 +32,7 @@ class EditarPerfilController extends Controller
          'profesion'=>$request['profesion'],
       ]);
 
-      return redirect()->route('home', $users);
+      return redirect()->route('usuario', $users);
 
    }
 }
