@@ -7,6 +7,7 @@ $(document).on('click', '.borrar', function (event) {
     $(this).closest('tr').remove();
 });
 </script>
+
 <div class="content">
 <div class="container-fluid">
 <table class="table" action="historial" method="get">
@@ -15,7 +16,6 @@ $(document).on('click', '.borrar', function (event) {
       <th scope="col">Nº </th>
       <th scope="col">Descripción del problema</th>
       <th scope="col">Categoría</th>
-      <th scope="col">Nombre y Apellido</th>
       <th scope="col">Dirección</th>
       <th scope="col">Teléfono</th>
     </tr>
@@ -23,17 +23,18 @@ $(document).on('click', '.borrar', function (event) {
   @foreach($solicitud as $solicitud)
   <tbody>
     <tr>
-      <td>{{ $solicitud->idSolicitud }}</td>
+          <td>{{ $solicitud->idSolicitud }}</td>
           <td>{{ $solicitud->problema }}</td>
           <td>{{ $solicitud->nombre }}</td>
           <td>{{ $solicitud->direccion }}</td>
           <td>{{ $solicitud->telefono }}</td>
           <td>
-            <input class="btn btn-success" type="submit" name="aceptar" value ="Aceptar" />
+            <button class="btn btn-info" type="submit" name="aceptar" value ="Aceptar" >
+            <a href="{{ env('APP_URL', '').'/chatcolaborador' }}">{{ __('Aceptar') }}</a>
+            <input class="hidden" type="button" class="borrar btn btn-danger" />
+            </button>
           </td>
-          <td>
-            <input type="button" class="borrar btn btn-danger" value="Eliminar" />
-          </td>
+         
     </tr>
   </tbody>
   @endforeach
