@@ -6,36 +6,27 @@
                         <div class="row">
                         <div class="col-md-4">
                         <div class="profile-img">
-                            <img src="/img/perfil.jpg" alt=""/>
-                            <div class="file btn btn-lg btn-primary">
-                                Cambiar foto
-                                <input type="file" name="file"/>
-                            </div>
+                            <img src="/img/perfilcolab.jpg" alt=""/>
+                            
                             
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
-                                    <h1>
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-                                    </h1>
+                                    <h1><strong> {{ Auth::user()->name }}</strong></h1>
                                     <h6>
                                         {{ Auth::user()->profesion }}
                                     </h6>
                                     <p class="proile-rating">RANKINGS : <span>8/10</span></p>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Acerca de</a>
+                                    <h6><strong>Acerca de</strong></h6>
                                 </li>
                                
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
+              
+                    <div class="col-md-12">
                        
                     <div class="content">
                     
@@ -64,8 +55,9 @@
                         <label for="editarperfil">Profesion</label>
                         <input type="text" class="form-control" name="profesion" id="profesion" value="{{ Auth::user()->profesion }}">
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                    </br>
+                    <button type="submit"  class="btn btn-primary float-right col-md-3">Actualizar</button>
+                  
             </form>           
         </div>
 
