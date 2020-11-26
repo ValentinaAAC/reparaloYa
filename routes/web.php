@@ -87,7 +87,8 @@ Route::get('/editarperfil', function() {
 });
 
 Route::get('/editarperfil/edit', 'EditarPerfilController@edit')->name('editarperfil.edit');
-Route::put('/editarperfil/update', 'EditarPerfilController@update')->name('editarperfil.update');
+Route::patch('/editarperfil/update', 'EditarPerfilController@update')->name('editarperfil.update');
+
 
 Auth::routes();
 
