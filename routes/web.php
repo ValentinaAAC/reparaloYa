@@ -85,9 +85,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/editarperfil', function() {
     return view('editarperfil');
 });
+Route::get('/editarperfilusu', function() {
+    return view('editarperfilusu');
+});
 
 Route::get('/editarperfil/edit', 'EditarPerfilController@edit')->name('editarperfil.edit');
 Route::patch('/editarperfil/update', 'EditarPerfilController@update')->name('editarperfil.update');
+Route::get('/editarperfilusu/edit', 'EditarPerfilUsuController@edit')->name('editarperfilusu.edit');
+Route::patch('/editarperfilusu/update', 'EditarPerfilUsuController@update')->name('editarperfilusu.update');
 
 
 Auth::routes();
