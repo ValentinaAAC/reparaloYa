@@ -76,9 +76,7 @@ Route::get('/registeruser', function() {
     return view('registeruser');
 });
 
-Route::get('/usuario', function() {
-    return view('usuario');
-});
+Route::get('/usuario', 'UsuarioController@index')->name('usuario');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
