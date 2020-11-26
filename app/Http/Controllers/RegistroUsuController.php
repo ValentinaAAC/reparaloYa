@@ -43,4 +43,11 @@ class RegistroUsuController extends Controller
         $users = RegistroUsu::all();
         return view('controlusu')->with(compact('users'));
     }
+
+    public function destroy($id)
+    {
+        $users=RegistroUsu::findOrFail($id);
+        $users->delete();
+        return Redirect::to('/controlusu');
+    }
 }
