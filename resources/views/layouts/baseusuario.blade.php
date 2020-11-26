@@ -102,28 +102,7 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <p>
-									Ayuda
-									<b class="caret"></b>
-								</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Reclamos y sugerencias</a></li>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-group">
-                                            <label for="message-text" class="col-form-label">Escriba aqui su reclamo o sugerencia:</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Enviar</button>
-                                        </form>
-                                    </div>
-
-                            </ul>
-                        </li>
+                        
                         <li class="nav-item dropdown">
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
