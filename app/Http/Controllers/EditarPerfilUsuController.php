@@ -32,6 +32,6 @@ class EditarPerfilUsuController extends Controller
       ]);
 
       return redirect()->route('usuario', $users);
-        
+       
    }
 }
