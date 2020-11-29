@@ -22,6 +22,5 @@ class TrabajosController extends Controller
         return view('trabajospublicados',compact('solicitud','servicios'));
         
     }
-
-    
+  
 }
