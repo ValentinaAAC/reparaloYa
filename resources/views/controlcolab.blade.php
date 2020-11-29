@@ -32,7 +32,7 @@
                                             <td>{{ $users->telephone }}</td>
                                             <td>{{ $users->profesion }}</td>
                                         	<td>{{ $users->email }}</td>
-                                            <td><button type="button" class="btn btn-primary">Pago recibido</button></td>
+                                            
                                             <td>
                                             <form method="post" action="{!! action('RegistroColabController@destroy', $users->id) !!}" class="pull-left">
                                             {!! csrf_field() !!}
