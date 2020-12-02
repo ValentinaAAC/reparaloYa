@@ -66,10 +66,10 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <label>Profesion</label>
+                                                <label>Área de trabajo</label>
                                             </div>
                                             <div class="col-md-6">
-                                                <p>{{ Auth::user()->profesion }}</p>
+                                                <p>{{ Auth::user()->idServicios }}</p>
                                             </div>
                                         </div>
                             </div>

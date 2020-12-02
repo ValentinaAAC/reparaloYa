@@ -90,6 +90,12 @@
                         <p>Perfil</p>
                     </a>
                 </li>
+                <li class="">
+                    <a href="{{ env('APP_URL', '').'/ayudacolab' }}">
+                        <i class="pe-7s-help1"></i>
+                        <p>Ayuda</p>
+                    </a>
+                </li>
                
             </ul>
     	</div>
@@ -132,7 +138,12 @@
             </div>
         </nav>
 <!--------------------------------------------------- Perfil------------------------------------------------------>
-
+@if(Session::has('message'))
+        <div class="alert alert-success alert-dismissible text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{Session::get('message')}}
+        </div>
+    @endif
         @yield('contenido') 
                   
 </body>

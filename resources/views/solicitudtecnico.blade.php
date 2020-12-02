@@ -24,16 +24,16 @@
 
   <div class="form-group">
     <label for="solicitudtecnico">Seleccione una categoria</label>
-    <select class="form-control" name="servicio" id="servicio" placeholder="Servicio">
-      <option>Seleccione una categoria</option>
-      <option value="1">Computacion</option>
+    <select class="form-control" name="servicio" id="servicio" placeholder="Servicio" required>
+      <option value="">Seleccione una categoría</option>
+      <option value="1">Computación</option>
       <option value="2">Acces Point</option>
       <option value="3">Impresoras y Scanner</option>
-      <option value="4">Gasfiteria</option>
+      <option value="4">Gasfitería</option>
       <option value="5">Servicio de electricidad</option>
-      <option value="6">Linea blanca</option>
+      <option value="6">Línea blanca</option>
       <option value="7">Electro</option>
-      <option value="8">Climatizacion</option>
+      <option value="8">Climatización</option>
     </select>
   </div>
  

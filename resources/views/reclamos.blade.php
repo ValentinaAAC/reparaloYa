@@ -1,7 +1,11 @@
 @extends('layouts.baseadmin')
 @section('contenido')
 
-<a class="navbar-brand" href="#">Colaboradores registrados</a>
+
+
+        <!-- nadbar/-->
+        
+        <a class="navbar-brand" href="#">Reclamos y sugerencias</a>
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -15,38 +19,30 @@
                                 <table class="table table-hover table-striped">
                                     <thead>
                                         <th>ID</th>
-                                        <th>R.U.T.</th>
+                                       	<th>Descripción</th>
                                         <th>Nombre y apellido</th>
-                                        <th>Teléfono</th>
-                                        <th>Profesión o especialidad</th>
-                                        <th>Correo electrónico</th>
-
+                                        <th>Tipo de Usuario</th>
                                     </thead>
-                                    @foreach($users as $users)
-                                    @if($users->role=="colaborador")
+                                    
+                                    @foreach($reclamos as $reclamos)
                                     <tbody>  
                                         <tr>
-                                            <td>{{ $users->id }}</td>
-                                            <td>{{ $users->rut }}</td>
-                                        	<td>{{ $users->name }}</td>
-                                            <td>{{ $users->telephone }}</td>
-                                            <td>{{ $users->nombre}}</td>
-                                        	<td>{{ $users->email }}</td>
-                                            
+                                            <td>{{ $reclamos->id }}</td>
+                                        	<td>{{ $reclamos->descripcion }}</td>
+                                            <td>{{ $reclamos->name }}</td>
+                                            <td>{{ $reclamos->role }}</td>
                                             <td>
-                                            <form method="post" action="{!! action('RegistroColabController@destroy', $users->id) !!}" class="pull-left">
+                                            <form method="post" action="{!! action('ReclamosController@destroy', $reclamos->id) !!}" class="pull-left">
                                             {!! csrf_field() !!}
                                                 <div>
-                                                    <button type="submit" onclick="return confirm('¿Desea eliminar el colaborador?')" class="btn btn-danger">Eliminar</button>
+                                                    <button type="submit" onclick="return confirm('¿Desea eliminar reclamo/sugerencia?')" class="btn btn-danger">Eliminar</button>
                                                 </div>
                                             </form>
-                                            
-                                            
                                             </td>
                                         </tr>
                                     </tbody>
-                                    @endif
                                     @endforeach
+                                    
                                     
                                 </table>
 
@@ -57,5 +53,11 @@
                 </div>
             </div>
 
+
+        </div>
+        </div>
+
+    </div>
+</div>
 
 @endsection

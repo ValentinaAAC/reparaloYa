@@ -16,6 +16,7 @@ $(document).on('click', '.borrar', function (event) {
       <th scope="col">Nº </th>
       <th scope="col">Descripción del problema</th>
       <th scope="col">Categoría</th>
+      <th scope="col">Nombre y Apellido</th>
       <th scope="col">Dirección</th>
       <th scope="col">Teléfono</th>
     </tr>
@@ -23,8 +24,10 @@ $(document).on('click', '.borrar', function (event) {
   @foreach($solicitud as $solicitud)
   <tbody>
     <tr>
+    @if(Auth::user()->idServicios == $solicitud->idServicios)
           <td>{{ $solicitud->idSolicitud }}</td>
           <td>{{ $solicitud->problema }}</td>
+          <td>{{ $solicitud->categoria }}</td>
           <td>{{ $solicitud->nombre }}</td>
           <td>{{ $solicitud->direccion }}</td>
           <td>{{ $solicitud->telefono }}</td>
@@ -34,7 +37,7 @@ $(document).on('click', '.borrar', function (event) {
             <input class="hidden" type="button" class="borrar btn btn-danger" />
             </button>
           </td>
-         
+    @endif
     </tr>
   </tbody>
   @endforeach

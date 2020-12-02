@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\RegistroColab;
 use Illuminate\Support\Facades\Hash;
+use App\Servicios;
 
 Use Session;
 Use Redirect;
@@ -31,7 +32,7 @@ class RegistroColabController extends Controller
         $users->email = $request->email;
         $users->password = Hash::make($request->password);
         $users->telephone = $request->telephone;
-        $users->idServicios = $request->idServicios;
+        $users->idServicios = $request->servicio;
         $users->image = $request->image;
         $users->save();
 
@@ -43,9 +44,12 @@ class RegistroColabController extends Controller
 
     public function listado()
     {
-       
-        $users = RegistroColab::all();
-        return view('controlcolab')->with(compact('users'));
+        $users = DB::table('users')
+        ->join('servicios','users.idServicios','=','servicios.idServicios')
+        ->select('users.*','servicios.nombre')
+        ->get();
+        $servicios = Servicios::all();
+        return view('controlcolab',compact('users','servicios'));
     }
 
     public function destroy($id)

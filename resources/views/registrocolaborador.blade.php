@@ -76,18 +76,27 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="registrocolaborador" class="col-md-4 col-form-label text-md-right">{{ __('Profesión') }}</label>
-
+                        <label for="registrocolaborador" class="col-md-4 col-form-label text-md-right">{{ __('Área de trabajo') }}</label>
                             <div class="col-md-6">
-                                <input id="profesion" type="text" class="form-control @error('profesion') is-invalid @enderror" name="profesion" value="{{ old('profesion') }}" required autocomplete="profesion">
-
-                                @error('profesion')
+                            <select class="form-control" name="servicio" id="servicio" placeholder="Servicio" required>
+                            <option value="">Seleccione una categoría</option>
+                            <option value="1">Computación</option>
+                            <option value="2">Acces Point</option>
+                            <option value="3">Impresoras y Scanner</option>
+                            <option value="4">Gasfitería</option>
+                            <option value="5">Servicio de electricidad</option>
+                            <option value="6">Línea blanca</option>
+                            <option value="7">Electro</option>
+                            <option value="8">Climatización</option>
+                            </select>
+                            @error('servicio')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
-                            </div>
+                            @enderror
+                            </div>  
                         </div>
+                        
 
 
 
