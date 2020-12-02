@@ -16,7 +16,7 @@ class TrabajosController extends Controller
     {
         $solicitud = DB::table('solicitud')
         ->join('servicios','solicitud.idServicios','=','servicios.idServicios')
-        ->select('solicitud.*','servicios.nombre')
+        ->select('solicitud.*','servicios.categoria')
         ->get();
         $servicios = Servicios::all();
         return view('trabajospublicados',compact('solicitud','servicios'));
