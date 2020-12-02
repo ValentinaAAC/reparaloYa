@@ -31,7 +31,7 @@ class RegistroColabController extends Controller
         $users->email = $request->email;
         $users->password = Hash::make($request->password);
         $users->telephone = $request->telephone;
-        $users->profesion = $request->profesion;
+        $users->idServicios = $request->idServicios;
         $users->image = $request->image;
         $users->save();
 
