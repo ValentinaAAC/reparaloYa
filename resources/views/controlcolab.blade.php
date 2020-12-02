@@ -30,7 +30,7 @@
                                             <td>{{ $users->rut }}</td>
                                         	<td>{{ $users->name }}</td>
                                             <td>{{ $users->telephone }}</td>
-                                            <td>{{ $users->profesion }}</td>
+                                            <td>{{ $users->nombre}}</td>
                                         	<td>{{ $users->email }}</td>
                                             
                                             <td>
