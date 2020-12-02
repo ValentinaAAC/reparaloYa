@@ -85,6 +85,12 @@
                         <p>Control de Pagos</p>
                     </a>
                 </li>
+                <li class="">
+                    <a href="{{ env('APP_URL', '').'/reclamos' }}">
+                        <i class="pe-7s-note2"></i>
+                        <p>Reclamos y Sugerencias</p>
+                    </a>
+                </li>
                </ul>
             </ul>
         </div>
