@@ -122,3 +122,10 @@ Route::get('controlcolab', 'RegistroColabController@listado');
 
 Route::post('controlcolab/{id}', 'RegistroColabController@destroy')->name('controlcolab.destroy');
 Route::post('controlusu/{id}', 'RegistroUsuController@destroy')->name('controlusu.destroy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/chatusuario', 'ChatController@index');
+Route::get('/messages', 'ChatController@fetchAllMessages');
+Route::post('/messages', 'ChatController@sendMessage');
