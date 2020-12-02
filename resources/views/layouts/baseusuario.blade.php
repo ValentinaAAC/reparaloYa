@@ -5,12 +5,10 @@
 	<link rel="icon" type="image/png" href="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="userId" content="{{ Auth::check() ? Auth::user()->id : '' }}">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     
 	<title>¡Repáralo Ya!</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -138,39 +136,7 @@
                 </div>
             </div>
         </nav>
-    <ul class="navbar-nav ml-auto">
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    
 <!--------------------------------------------------- Perfil------------------------------------------------------>
     @if(Session::has('message'))
         <div class="alert alert-success alert-dismissible text-center" role="alert">
@@ -204,7 +170,6 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
- <script src="{{ mix('js/app.js') }}" defer></script>
 
 
 </html>
