@@ -89,6 +89,12 @@
                         <p>Perfil</p>
                     </a>
                 </li>
+                <li class="">
+                    <a href="{{ env('APP_URL', '').'/ayuda' }}">
+                        <i class="pe-7s-help1"></i>
+                        <p>Ayuda</p>
+                    </a>
+                </li>
                </ul>
             </ul>
     	</div>
