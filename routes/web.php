@@ -122,3 +122,23 @@ Route::get('controlcolab', 'RegistroColabController@listado');
 
 Route::post('controlcolab/{id}', 'RegistroColabController@destroy')->name('controlcolab.destroy');
 Route::post('controlusu/{id}', 'RegistroUsuController@destroy')->name('controlusu.destroy');
+
+Route::get('/ayuda',function(){
+    return view('ayuda');
+});
+Route::get('/ayuda/index', 'ReclamosController@index')->name('ayuda.index');
+Route::post('/ayuda/store', 'ReclamosController@store')->name('ayuda.store');
+
+
+Route::get('/ayudacolab',function(){
+    return view('ayudacolab');
+});
+Route::get('/ayudacolab/index', 'ReclamosColabController@index')->name('ayudacolab.index');
+Route::post('/ayudacolab/store', 'ReclamosColabController@store')->name('ayudacolab.store');
+
+Route::get('/reclamos',function(){
+    return view('reclamos');
+});
+
+Route::get('reclamos', 'ReclamosController@listado');
+Route::post('reclamos/{id}', 'ReclamosController@destroy')->name('reclamos.destroy');
