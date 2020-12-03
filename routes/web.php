@@ -143,6 +143,10 @@ Route::get('/reclamos',function(){
 Route::get('reclamos', 'ReclamosController@listado');
 Route::post('reclamos/{id}', 'ReclamosController@destroy')->name('reclamos.destroy');
 
+Route::get('/chatcolaborador', 'ChatController@index2');
+Route::get('/messages', 'ChatController@fetchAllMessages');
+Route::post('/messages', 'ChatController@sendMessage');
+
 Route::get('/chatusuario', 'ChatController@index');
 Route::get('/messages', 'ChatController@fetchAllMessages');
 Route::post('/messages', 'ChatController@sendMessage');
