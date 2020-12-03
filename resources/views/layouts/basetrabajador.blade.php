@@ -137,14 +137,24 @@
                 </div>
             </div>
         </nav>
+
+    <div class="main-panel">
+	<nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="container">
+               
+                  
+                
+                </div>
+            </div>
+       </nav>
+        <main class="py-4">
+            @yield('contenido')
+        </main>
+    </div>
+
 <!--------------------------------------------------- Perfil------------------------------------------------------>
-@if(Session::has('message'))
-        <div class="alert alert-success alert-dismissible text-center" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            {{Session::get('message')}}
-        </div>
-    @endif
-        @yield('contenido') 
+
                   
 </body>
 
