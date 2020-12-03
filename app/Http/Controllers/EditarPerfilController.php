@@ -29,7 +29,6 @@ class EditarPerfilController extends Controller
          'name'=>$request['name'],
          'email'=>$request['email'],
          'telephone'=>$request['telephone'],
-         'profesion'=>$request['profesion'],
       ]);
 
       return redirect()->route('home', $users);
