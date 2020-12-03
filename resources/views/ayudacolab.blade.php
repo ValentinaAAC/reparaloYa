@@ -5,7 +5,7 @@
 <div class="content">
         </br>
         </br>
-        <form action="{{ route ('ayudacolab.store') }}" method="post">
+        <form action="{{ route ('ayudacolab.storeColab') }}" method="post">
             {{ csrf_field() }}
         <div class="form-group">
             <label  for="ayudacolab">Escribe aquí tu reclamo o sugerencia: </label>
