@@ -146,3 +146,6 @@ Route::get('/seguimiento',function(){
     return view('seguimiento');
 });
 Route::get('seguimiento', 'TrabajosController@listadoSegui');
+Route::get('/chatusuario', 'ChatController@index');
+Route::get('/messages', 'ChatController@fetchAllMessages');
+Route::post('/messages', 'ChatController@sendMessage');

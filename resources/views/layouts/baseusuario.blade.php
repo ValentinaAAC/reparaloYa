@@ -4,8 +4,11 @@
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
     
 	<title>¡Repáralo Ya!</title>
+
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -42,8 +45,6 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css' />
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     
-    @livewireStyles
-    @livewireScripts
 </head>
 <body>
 
@@ -135,7 +136,7 @@
                 </div>
             </div>
         </nav>
-
+    
 <!--------------------------------------------------- Perfil------------------------------------------------------>
     @if(Session::has('message'))
         <div class="alert alert-success alert-dismissible text-center" role="alert">
@@ -169,7 +170,6 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
-
 
 
 </html>
