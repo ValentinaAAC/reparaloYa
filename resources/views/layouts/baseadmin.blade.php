@@ -46,7 +46,7 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="black" data-image="assets/img/sidebar-4.jpg">
+    <div class="sidebar" data-color="green" data-image="assets/img/sidebar-4.jpg">
         <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
 <!-- panel lateral-->

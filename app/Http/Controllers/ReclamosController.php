@@ -21,6 +21,11 @@ class ReclamosController extends Controller
 
     public function index()
     {
+        return view('ayuda'); 
+    }
+
+    public function indexColab()
+    {
         return view('ayudacolab'); 
     }
 
@@ -28,7 +33,17 @@ class ReclamosController extends Controller
     {
         $reclamos = new Reclamos();
         $reclamos->descripcion = $request->descripcion;
-        $reclamos['user_id'] = Auth::user()->id;;
+        $reclamos['user_id'] = Auth::user()->id;
+        $reclamos->save();
+        Session::flash('message','¡Se ha mandado tu reclamo/sugerencia con éxito!');
+        return Redirect::to('/ayuda');
+    }
+
+    public function storeColab(Request $request)
+    {
+        $reclamos = new Reclamos();
+        $reclamos->descripcion = $request->descripcion;
+        $reclamos['user_id'] = Auth::user()->id;
         $reclamos->save();
         Session::flash('message','¡Se ha mandado tu reclamo/sugerencia con éxito!');
         return Redirect::to('/ayudacolab');

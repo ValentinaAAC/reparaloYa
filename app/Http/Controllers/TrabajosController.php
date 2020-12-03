@@ -22,5 +22,16 @@ class TrabajosController extends Controller
         return view('trabajospublicados',compact('solicitud','servicios'));
         
     }
+
+    public function listadoSegui()
+    {
+        $solicitud = DB::table('solicitud')
+        ->join('servicios','solicitud.idServicios','=','servicios.idServicios')
+        ->select('solicitud.*','servicios.categoria')
+        ->get();
+        $servicios = Servicios::all();
+        return view('seguimiento',compact('solicitud','servicios'));
+        
+    }
   
 }

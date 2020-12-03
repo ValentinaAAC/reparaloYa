@@ -48,7 +48,7 @@
 <body>
 
 <div class="wrapper">
-     <div class="sidebar" data-color="red" data-image="assets/img/sidebar-4.jpg">
+     <div class="sidebar" data-color="black" data-image="assets/img/sidebar-4.jpg">
 
     <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
@@ -66,6 +66,12 @@
                     <a href="{{ env('APP_URL', '').'/trabajospublicados' }}">
                         <i class="pe-7s-bell"></i>
                         <p>Trabajos a realizar</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="{{ env('APP_URL', '').'/seguimiento' }}">
+                        <i class="pe-7s-help1"></i>
+                        <p>Seguimiento de trabajos</p>
                     </a>
                 </li>
 
