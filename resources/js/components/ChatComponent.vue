@@ -3,7 +3,7 @@
 
        <div class="col-8">
            <div class="card card-default">
-               <div class="card-header">Messages</div>
+               <div class="card-header">Mensajes</div>
                <div class="card-body p-0">
                    <ul class="list-unstyled" style="height:300px; overflow-y:scroll" v-chat-scroll>
                        <li class="p-2" v-for="(message, index) in messages" :key="index" >
@@ -19,10 +19,10 @@
                     v-model="newMessage"
                     type="text"
                     name="message"
-                    placeholder="Enter your message..."
+                    placeholder="Escriba su mensaje..."
                     class="form-control">
            </div>
-            <span class="text-muted" v-if="activeUser" >{{ activeUser.name }} is typing...</span>
+            <span class="text-muted" v-if="activeUser" >{{ activeUser.name }} esta escribiendo...</span>
        </div>
 
         <div class="col-4">
