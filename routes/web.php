@@ -99,7 +99,6 @@ Route::get('historialusuario', 'HistorialController@listado');
 
 Route::get('trabajospublicados', 'TrabajosController@listado');
 
-
 Route::get('/admin', function() {
     return view('admin');
 });
@@ -133,8 +132,8 @@ Route::post('/ayuda/store', 'ReclamosController@store')->name('ayuda.store');
 Route::get('/ayudacolab',function(){
     return view('ayudacolab');
 });
-Route::get('/ayudacolab/index', 'ReclamosColabController@index')->name('ayudacolab.index');
-Route::post('/ayudacolab/store', 'ReclamosColabController@store')->name('ayudacolab.store');
+Route::get('/ayudacolab/indexColab', 'ReclamosController@indexColab')->name('ayudacolab.indexColab');
+Route::post('/ayudacolab/storeColab', 'ReclamosController@storeColab')->name('ayudacolab.storeColab');
 
 Route::get('/reclamos',function(){
     return view('reclamos');
@@ -142,3 +141,8 @@ Route::get('/reclamos',function(){
 
 Route::get('reclamos', 'ReclamosController@listado');
 Route::post('reclamos/{id}', 'ReclamosController@destroy')->name('reclamos.destroy');
+
+Route::get('/seguimiento',function(){
+    return view('seguimiento');
+});
+Route::get('seguimiento', 'TrabajosController@listadoSegui');
