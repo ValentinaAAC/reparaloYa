@@ -18,6 +18,11 @@ class ChatController extends Controller
     	return view('chat.chat');
     }
 
+    public function index2()
+    {
+    	return view('chat.chat');
+    }
+
     public function fetchAllMessages()
     {
     	return Chat::with('user')->get();
