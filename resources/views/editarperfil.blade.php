@@ -47,13 +47,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="editarperfil">telefono</label>
+                        <label for="editarperfil">Teléfono</label>
                         <input type="text" class="form-control" name="telephone" id="telephone" value="{{ Auth::user()->telephone }}">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="editarperfil">Profesion</label>
-                        <input type="text" class="form-control" name="profesion" id="profesion" value="{{ Auth::user()->profesion }}">
                     </div>
                     </br>
                     <button type="submit"  class="btn btn-primary float-right col-md-3">Actualizar</button>
