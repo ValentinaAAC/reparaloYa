@@ -6,7 +6,7 @@
     <meta name="userId" content="{{ Auth::check() ? Auth::user()->id : '' }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Chat</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    
    
 
 
@@ -33,7 +33,7 @@
 <body>
     <div id="app">
         <div class="wrapper">
-     <div class="sidebar" data-color="Red" data-image="assets/img/sidebar-4.jpg">
+     <div class="sidebar" data-color="" data-image="assets/img/sidebar-4.jpg">
 
     <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
