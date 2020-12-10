@@ -14,9 +14,11 @@ class HistorialController extends Controller
     {
         $solicitud = DB::table('solicitud')
         ->join('servicios','solicitud.idServicios','=','servicios.idServicios')
-        ->select('solicitud.*','servicios.nombre')
+        ->join('estados','solicitud.idSolicitud','=','estados.idSolicitud')
+        ->select('solicitud.*','servicios.nombre','estados.*')
         ->get();
         $servicios = Servicios::all();
-        return view('historialusuario',compact('solicitud','servicios'));
+        return view('historialusuario',compact('solicitud','servicios',));
+       
     }
 }
