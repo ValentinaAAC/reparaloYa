@@ -41,14 +41,12 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-    
-    @livewireStyles
-    @livewireScripts
+
 </head>
 <body>
 
 <div class="wrapper">
-     <div class="sidebar" data-color="black" data-image="assets/img/sidebar-4.jpg">
+     <div class="sidebar" data-color="blue" data-image="assets/img/sidebar-4.jpg">
 
     <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
@@ -66,27 +64,6 @@
                     <a href="{{ env('APP_URL', '').'/trabajospublicados' }}">
                         <i class="pe-7s-bell"></i>
                         <p>Trabajos a realizar</p>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="{{ env('APP_URL', '').'/seguimiento' }}">
-                        <i class="pe-7s-help1"></i>
-                        <p>Seguimiento de trabajos</p>
-                    </a>
-                </li>
-
-
-               <li>
-                    <a href="{{ env('APP_URL', '').'/historial' }}">
-                        <i class="pe-7s-note2"></i>
-                        <p>Historial</p>
-                    </a>
-                </li>
-
-                <li class="">
-                    <a href="{{ env('APP_URL', '').'/chatcolaborador' }}">
-                        <i class="pe-7s-chat"></i>
-                        <p>Chat</p>
                     </a>
                 </li>
 
@@ -143,24 +120,14 @@
                 </div>
             </div>
         </nav>
-
-    <div class="main-panel">
-	<nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="container">
-               
-                  
-                
-                </div>
-            </div>
-       </nav>
-        <main class="py-4">
-            @yield('contenido')
-        </main>
-    </div>
-
 <!--------------------------------------------------- Perfil------------------------------------------------------>
-
+@if(Session::has('message'))
+        <div class="alert alert-success alert-dismissible text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{Session::get('message')}}
+        </div>
+    @endif
+        @yield('contenido') 
                   
 </body>
 
