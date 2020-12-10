@@ -98,6 +98,8 @@ Auth::routes();
 Route::get('historialusuario', 'HistorialController@listado');
 
 Route::get('trabajospublicados', 'TrabajosController@listado');
+Route::get('trabajospublicados/{id}/{estado}', 'TrabajosController@actualizarEst');
+
 
 Route::get('/admin', function() {
     return view('admin');
