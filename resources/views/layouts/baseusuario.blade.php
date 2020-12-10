@@ -3,21 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="userId" content="{{ Auth::check() ? Auth::user()->id : '' }}">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
     
 	<title>¡Repáralo Ya!</title>
-
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <style>
     html, body{
         font-family: 'PT Sans', sans-serif;
@@ -27,7 +21,6 @@
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
 
 
     <!-- Bootstrap core CSS     -->
@@ -53,7 +46,7 @@
 <body>
 
 <div class="wrapper">
-     <div class="sidebar" data-color="black" data-image="assets/img/sidebar-4.jpg">
+     <div class="sidebar" data-color="red" data-image="assets/img/sidebar-4.jpg">
 
     <!--  aqui <section></section> puede cambiar el color del sidebar="blue | azure | green | orange | red | purple" -->
 
@@ -80,13 +73,6 @@
                         <p>Historial</p>
                     </a>
                 </li>
-
-               <li class="">
-                    <a href="{{ env('APP_URL', '').'/chatusuario' }}">
-                        <i class="pe-7s-chat"></i>
-                        <p>Chat</p>
-                    </a>
-                </li>
                 
                  <li class="">
                     <a href="{{ env('APP_URL', '').'/usuario' }}">
@@ -104,17 +90,17 @@
             </ul>
     	</div>
     </div>
-    
-        <div class="main-panel">
+
+    <div class="main-panel">
 		<nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Usuario</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                   
                     <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item dropdown">
+                        
+                        <li class="nav-item dropdown">
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
@@ -126,7 +112,7 @@
                                 @csrf
                             </form>
                         </div>
-                    </li>
+                        </li>
 
                         <li>
                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -141,27 +127,15 @@
             </div>
         </nav>
 
-    <div class="main-panel">
-	<nav class="navbar navbar-default navbar-fixed">
-            <div class="container-fluid">
-                <div class="container">
-               
-                  
-                
-                </div>
-            </div>
-       </nav>
-        <main class="py-4">
-            @yield('contenido')
-        </main>
-    </div>
-       
-    <script src="{{ mix('js/app.js') }}" defer></script>
- 
-</body>
-</html>
- 
+<!--------------------------------------------------- Perfil------------------------------------------------------>
+    @if(Session::has('message'))
+        <div class="alert alert-success alert-dismissible text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{Session::get('message')}}
+        </div>
+    @endif
 
+        @yield('contenido')
               
 </body>
 
@@ -184,6 +158,7 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
+
 
 
 </html>
