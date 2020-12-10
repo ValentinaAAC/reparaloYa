@@ -11,7 +11,7 @@
           <img src="img/torre1.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Pc</h4>
-            <p>Limpieza, gestionde de cables, cambio de pasta termica, upgrade, formateo, istalacion de software etc.</p>
+            <p>Limpieza, gestión de de cables, cambio de pasta térmica, upgrade, formateo, instalación de software, etc.</p>
           </figcaption>
         </figure>
       </div>
@@ -20,7 +20,7 @@
           <img src="img/ethernet.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Access point</h4>
-            <p>Instalacion de acces point, configuracion de router, levanytamiento de servicios grupo hogar etc.</p>
+            <p>Instalación de access point, configuración de router, levantamiento de servicios, grupo hogar, etc.</p>
           </figcaption>
         </figure>
       </div>
@@ -29,7 +29,7 @@
           <img src="img/Impresoras.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Impresoras y Scanner </h4>
-            <p>Mantencion, limpieza de inyectores y cabezales, cambio de almohadilla, hard reset etc.</p>
+            <p>Mantención, limpieza de inyectores y cabezales, cambio de almohadilla, hard reset, etc.</p>
           </figcaption>
         </figure>
       </div>
@@ -40,8 +40,8 @@
         <figure class="effect-marley">
           <img src="img/Gasfiteria.jpg" alt="" class="img-responsive" />
           <figcaption>
-            <h4>Gasfiteria</h4>
-            <p>Instalar, mantener y reparar las tuberías, Calefont, Fugas de Agua y Gas.etc.</p>
+            <h4>Gasfitería</h4>
+            <p>Instalar, mantener y reparar las tuberías, Calefont, fugas de agua y gas,etc.</p>
           </figcaption>
         </figure>
       </div>
@@ -50,7 +50,7 @@
           <img src="img/electricidad.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Servicio de electricidad</h4>
-            <p>Instalación de enchufes, lámparas; instalaciones de tableros eléctricos. Fallas eléctricas y reparaciones Cortocircuitos, Sobrecargas, Recableado  etc. </p>
+            <p>Instalación de enchufes, lámparas, instalaciones de tableros eléctricos, fallas eléctricas y reparaciones de cortocircuitos, Sobrecargas, Recableado,  etc. </p>
           </figcaption>
         </figure>
       </div>
@@ -58,8 +58,8 @@
         <figure class="effect-marley">
           <img src="img/lineablanca.jpg" alt="" class="img-responsive" />
           <figcaption>
-            <h4>Linea blanca</h4>
-            <p>Reparación y mantención de lavadora, resfrigerador, microondas etc.</p>
+            <h4>Línea blanca</h4>
+            <p>Reparación y mantención de lavadora, refrigerador, microondas, etc.</p>
           </figcaption>
         </figure>
       </div>
@@ -73,7 +73,7 @@
           <img src="img/electrotv.jpg" alt="" class="img-responsive" />
           <figcaption>
             <h4>Electro</h4>
-            <p>Mantencion y reparacion de television, audio, HIFI.</p>
+            <p>Mantención y reparación de televisión, audio, HIFI.</p>
           </figcaption>
         </figure>
       </div>
@@ -81,8 +81,8 @@
         <figure class="effect-marley">
           <img src="img/climatizacion.jpg" alt="" class="img-responsive" />
           <figcaption>
-            <h4>Climatizacion</h4>
-            <p>Instalacion, mantenimiento y programacion de equipo de climatizacion y aires acondicionado para el hogar.</p>
+            <h4>Climatización</h4>
+            <p>Instalación, mantenimiento y programación de equipo de climatización y aires acondicionados para el hogar.</p>
           </figcaption>
         </figure>
       </div>
@@ -91,7 +91,7 @@
         <figure class="effect-marley">
           <img src="img/Proximamente.jpg" alt="" class="img-responsive" />
           <figcaption>
-            <h4>Proximamente...</h4>
+            <h4>Próximamente...</h4>
             <p></p>
           </figcaption>
         </figure>
