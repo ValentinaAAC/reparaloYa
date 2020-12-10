@@ -18,19 +18,22 @@
                                     	<th>Categoría</th>
                                     	<th>Dirección</th>
                                     	<th>Teléfono</th>
+                                        <th>Estado de solicitud</th>
                                     </thead>
 
                                     @foreach($solicitud as $solicitud)
                                     <tbody>
                                         
                                         <tr>
+                                        
                                             <td>{{ $solicitud->idSolicitud }}</td>
                                         	<td>{{ $solicitud->problema }}</td>
                                         	<td>{{ $solicitud->nombre }}</td>
                                         	<td>{{ $solicitud->direccion }}</td>
                                         	<td>{{ $solicitud->telefono }}</td>
+                                            <td>{{ $solicitud->estado }}</td>
                                         </tr>
-
+                                       
                                     </tbody>
                                     @endforeach
                                     
