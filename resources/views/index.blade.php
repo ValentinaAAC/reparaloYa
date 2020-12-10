@@ -99,7 +99,7 @@
     <div class="container">
       <div class="left-text hidden-xs">
         <h4>¡Repáralo Ya!</h4>
-        <p><em>Sabemos que la hora de buscar un especialista es un momento complicado por eso queremos llevar al hogar la mejor alternativa. ¡Te la llevamos a donde estés! Los mejores especialistas están en un mismo lugar Ingresa tu dirección, y disfruta de la mejor atencion a domiciolio. ¡No te quedes con ganas! ¡Repáralo Ya!, te ayudamos en casa.</p>
+        <p><em>Sabemos que la hora de buscar un especialista es un momento complicado por eso queremos llevar al hogar la mejor alternativa. ¡Te la llevamos a donde estés! Los mejores especialistas están en un mismo lugar. Ingresa tu dirección, y disfruta de la mejor atención a domicilio. ¡No te quedes con ganas! ¡Repáralo Ya!, te ayudamos en casa.</p>
       </div>
       
       <div class="right-image hidden-xs"></div>
