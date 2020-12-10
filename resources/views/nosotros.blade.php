@@ -6,15 +6,15 @@
       <div class="text-center">
         <h2>Quienes somos!</h2>
         <div class="col-md-10 col-md-offset-1">
-          <p>Somos la compañía líder en delivery online de América Latina y transformamos el concepto de delivery. Ofrecemos una solución en el bolsillo de los usuarios.
-            Actualmente en la localidad de Chillán, se encuentran numerosos trabajadores independientes de reparación equipos informáticos, impresoras, Access Point electrodomesticos, linea blanca, climatizacion, gasfiteria y electricidad. que desean salir adelante, emprender y cumplir sus objetivos y metas.
+          <p>Ofrecemos una solución en el bolsillo de los usuarios.
+            Actualmente en la localidad de Chillán, se encuentran numerosos trabajadores independientes de reparación de equipos informáticos, impresoras, Access Point, electrodomésticos, línea blanca, climatización, gasfitería y electricidad, que desean salir adelante, emprender y cumplir sus objetivos y metas.
  Numerosas personas, al surgirles un problema en sus hogares de esta índole, ya sea por un factor interno o externo, no poseen la información de algún especialista al que puedan recurrir de manera rápida y segura, ya que en muchos casos las personas no tienen como asegurar que el técnico cuente con la capacitación adecuada para efectuar dicha labor.
 Otro inconveniente que surge es a la hora de pactar horarios o realizar la visita programada, ya que en varias ocasiones no se cumplen, desfavoreciendo al cliente de manera severa puesto que ya organizó una bitácora de su día contemplando lo acordado. Además, cabe destacar que algunos trabajadores independientes abusan de sus tarifas y son excesivamente altas en comparación al mercado actual.  
 Algunos técnicos no desempeñan sus servicios a domicilio, lo que perjudica a los clientes que no cuentan con algún tipo de vehículo o medio de transporte, por lo que se vuelve algo contra producente ya que las personas siempre optarán por el método más fácil y cómodo de resolver sus problemas. 
 
-Es por eso que creamos esta plataforma web para dar solucion a todos estos problemas. 
-En la aplicación web encuentras especialistas totalmente capacitados para resolver tus problemas.
-¡Vamos volando! llega el tecnico a la puerta de tu casa.</p>
+Es por eso que creamos esta plataforma web para dar solución a todos estos problemas. 
+En la aplicación web encontrarás especialistas totalmente capacitados para resolver tus problemas.
+¡Vamos volando!  El técnico llega a la puerta de tu casa.</p>
         </div>
 
          <hr>
@@ -98,7 +98,7 @@ En la aplicación web encuentras especialistas totalmente capacitados para resol
                   <a href="#"><img class=" " src="img/man2.jpg" alt=""></a>
                 </div>
                 <div class="media-body">
-                  <h4>Benjamin Vasquez</h4>
+                  <h4>Benjamín Vásquez</h4>
                   <h5>Base de datos </h5>
                   <ul class="tag clearfix">
                     <li class=""><a href="#"></a></li>
@@ -176,7 +176,7 @@ En la aplicación web encuentras especialistas totalmente capacitados para resol
                   <a href="#"><img class=" " src="img/man4.jpg" alt=""></a>
                 </div>
                 <div class="media-body">
-                  <h4>Matias Guerrero </h4>
+                  <h4>Matías Guerrero </h4>
                   <h5>Programador laravel</h5>
                   <ul class="tag clearfix">
                     <li class=""><a href="#"></a></li>
